@@ -1,0 +1,7 @@
+Mysqlで
+
+	mysql> source ファイルパス;
+
+で実行されます
+ファイルパスはec-site.sqlのファイルパスです
+例：C:/Users/○○○○/○○○○/ec-site.sql
