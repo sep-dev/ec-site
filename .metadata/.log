@@ -1,0 +1,123 @@
+!SESSION 2016-05-12 11:02:17.476 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-12 11:02:19.738
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-12 11:02:19.738
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.dltk.core 4 0 2016-05-12 11:08:43.081
+!MESSAGE Error retrieving contents of app.default.php
+!STACK 1
+org.eclipse.dltk.core.ModelException: ファイルが見つかりません: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php.
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:539)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:491)
+	at org.eclipse.dltk.internal.core.SourceModule.getBufferContent(SourceModule.java:405)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.getSourceAsCharArray(AbstractSourceModule.java:314)
+	at org.eclipse.dltk.internal.core.builder.AbstractBuildContext.getContents(AbstractBuildContext.java:66)
+	at org.eclipse.php.internal.core.builder.OrganizeBuildParticipantFactory$OrganizeBuildParticipantParticipant.build(OrganizeBuildParticipantFactory.java:77)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:242)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:176)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:73)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.incrementalBuild(ScriptBuilder.java:550)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:176)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.runtime.CoreException: ファイルが見つかりません: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:534)
+	... 22 more
+Caused by: java.io.FileNotFoundException: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php (指定されたファイルが見つかりません。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 25 more
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2016-05-12 11:08:43.081
+!MESSAGE ファイルが見つかりません: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php.
+!STACK 1
+org.eclipse.core.runtime.CoreException: ファイルが見つかりません: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:534)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:491)
+	at org.eclipse.dltk.internal.core.SourceModule.getBufferContent(SourceModule.java:405)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.getSourceAsCharArray(AbstractSourceModule.java:314)
+	at org.eclipse.dltk.internal.core.builder.AbstractBuildContext.getContents(AbstractBuildContext.java:66)
+	at org.eclipse.php.internal.core.builder.OrganizeBuildParticipantFactory$OrganizeBuildParticipantParticipant.build(OrganizeBuildParticipantFactory.java:77)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:242)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:176)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:73)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.incrementalBuild(ScriptBuilder.java:550)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:176)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php (指定されたファイルが見つかりません。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 25 more
+!SUBENTRY 2 org.eclipse.core.filesystem 4 271 2016-05-12 11:08:43.081
+!MESSAGE ファイルが見つかりません: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\config\app.default.php (指定されたファイルが見つかりません。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:534)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:491)
+	at org.eclipse.dltk.internal.core.SourceModule.getBufferContent(SourceModule.java:405)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.getSourceAsCharArray(AbstractSourceModule.java:314)
+	at org.eclipse.dltk.internal.core.builder.AbstractBuildContext.getContents(AbstractBuildContext.java:66)
+	at org.eclipse.php.internal.core.builder.OrganizeBuildParticipantFactory$OrganizeBuildParticipantParticipant.build(OrganizeBuildParticipantFactory.java:77)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildModule(StandardScriptBuilder.java:242)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.buildNatureModules(StandardScriptBuilder.java:176)
+	at org.eclipse.dltk.internal.core.builder.StandardScriptBuilder.build(StandardScriptBuilder.java:73)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.incrementalBuild(ScriptBuilder.java:550)
+	at org.eclipse.dltk.internal.core.builder.ScriptBuilder.build(ScriptBuilder.java:176)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
