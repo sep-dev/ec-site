@@ -1,0 +1,39 @@
+2016-05-12 02:02:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class EcSite could not be found.
+Exception Attributes: array (
+  'class' => 'EcSite',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Ec-Site
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-12 02:03:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class EcSite could not be found.
+Exception Attributes: array (
+  'class' => 'EcSite',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Ec-Site
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-12 02:04:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class EcSite could not be found.
+Exception Attributes: array (
+  'class' => 'EcSite',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Ec-Site
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
