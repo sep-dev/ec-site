@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
+<<<<<<< HEAD
   <fixed facet="php.core.component"/>
   <fixed facet="php.component"/>
+=======
+  <fixed facet="php.component"/>
+  <fixed facet="php.core.component"/>
+>>>>>>> e4fcadee0c565ab8ab05dab63b1315e8f11d642e
   <installed facet="php.core.component" version="1"/>
   <installed facet="php.component" version="5.3"/>
 </faceted-project>
