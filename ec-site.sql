@@ -1,3 +1,5 @@
+create database ec_site;
+connect ec_site;
 create table tblClient(cilentId int primary key not null auto_increment,
 					cilentName nvarchar(255) not null,
 					clientKana nvarchar(255) not null,
