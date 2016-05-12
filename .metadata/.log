@@ -121,3 +121,271 @@ java.io.FileNotFoundException: C:\Users\machidatakahiro\Desktop\pleiades\xampp\h
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:40.988
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.062
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseAliasContext.isValid(UseAliasContext.java:35)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.072
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseNameContext.isValid(UseNameContext.java:37)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.072
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseConstNameContext.isValid(UseConstNameContext.java:23)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.073
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseFunctionNameContext.isValid(UseFunctionNameContext.java:23)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.073
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.NamespaceUseNameContext.isValid(NamespaceUseNameContext.java:35)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.073
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.NamespaceUseFunctionNameContext.isValid(NamespaceUseFunctionNameContext.java:33)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:41.075
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.NamespaceUseConstNameContext.isValid(NamespaceUseConstNameContext.java:33)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.508
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.513
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseAliasContext.isValid(UseAliasContext.java:35)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.526
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseNameContext.isValid(UseNameContext.java:37)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.534
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseConstNameContext.isValid(UseConstNameContext.java:23)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.539
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseFunctionNameContext.isValid(UseFunctionNameContext.java:23)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.544
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.NamespaceUseNameContext.isValid(NamespaceUseNameContext.java:35)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.550
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.NamespaceUseFunctionNameContext.isValid(NamespaceUseFunctionNameContext.java:33)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
+
+!ENTRY org.eclipse.php.core 4 10001 2016-05-12 13:04:43.555
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:881)
+	at org.eclipse.php.internal.core.format.PHPHeuristicScanner.scanBackward(PHPHeuristicScanner.java:918)
+	at org.eclipse.php.internal.core.codeassist.contexts.ClassStatementContext.isValid(ClassStatementContext.java:48)
+	at org.eclipse.php.internal.core.codeassist.contexts.UseStatementContext.isValid(UseStatementContext.java:41)
+	at org.eclipse.php.internal.core.codeassist.contexts.NamespaceUseConstNameContext.isValid(NamespaceUseConstNameContext.java:33)
+	at org.eclipse.php.internal.core.codeassist.contexts.CompletionContextResolver.resolve(CompletionContextResolver.java:105)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:98)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:61)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:503)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:484)
