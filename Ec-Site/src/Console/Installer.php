@@ -43,7 +43,7 @@ class Installer
         // ask if the permissions should be changed
         if ($io->isInteractive()) {
             $validator = function ($arg) {
-                if (in_array($arg, ['Y', 'y', 'N', 'n'])) {
+                if (in_array($arg, array('Y', 'y', 'N', 'n'))) {
                     return $arg;
                 }
                 throw new Exception('This is not a valid answer. Please choose Y or n.');
@@ -55,7 +55,7 @@ class Installer
                 'Y'
             );
 
-            if (in_array($setFolderPermissions, ['Y', 'y'])) {
+            if (in_array($setFolderPermissions, array('Y', 'y'))) {
                 static::setFolderPermissions($rootDir, $io);
             }
         } else {
@@ -95,7 +95,7 @@ class Installer
      */
     public static function createWritableDirectories($dir, $io)
     {
-        $paths = [
+        $paths = array(
             'logs',
             'tmp',
             'tmp/cache',
@@ -104,7 +104,7 @@ class Installer
             'tmp/cache/views',
             'tmp/sessions',
             'tmp/tests'
-        ];
+        );
 
         foreach ($paths as $path) {
             $path = $dir . '/' . $path;
@@ -143,7 +143,7 @@ class Installer
         };
 
         $walker = function ($dir, $perms, $io) use (&$walker, $changePerms) {
-            $files = array_diff(scandir($dir), ['.', '..']);
+            $files = array_diff(scandir($dir), array('.', '..'));
             foreach ($files as $file) {
                 $path = $dir . '/' . $file;
 
