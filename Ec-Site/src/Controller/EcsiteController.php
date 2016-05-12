@@ -8,4 +8,6 @@ class EcsiteController extends AppController {
 
 	public function cart() {
 	}
+	public function inputdata() {
+	}
 }
