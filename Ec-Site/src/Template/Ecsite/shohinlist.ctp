@@ -1,6 +1,8 @@
 <div>
 	<h3>商品一覧</h3>
 	<?= $this -> Form -> create() ?>
+
+	<!-- 検索機能 -->
 	<fieldset>
 		<?= $this -> Form -> input('find') ?>
 		<?= $this -> Form -> button('Find') ?>
