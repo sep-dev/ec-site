@@ -11,7 +11,8 @@ class EcsiteController extends AppController {
 	}
 
 	public function initialize() {
-		//tblclientテーブルの参照
+// 		parent::initialize();
+// 		//tblclientテーブルの参照
 		$this-> tblClient = TableRegistry::get('tblclient');
 	}
 
@@ -47,8 +48,6 @@ class EcsiteController extends AppController {
 										$this->request->data['clientBirthMonth']."-".
 										$this->request->data['clientBirthday'])
  			);
-
-
 
 
 // 			tblclientに登録するための変数宣言
