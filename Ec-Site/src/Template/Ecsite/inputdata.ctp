@@ -52,7 +52,7 @@
 						<td>
 							姓<?= $this->Form->input('clientName1',array('size'=>'70'
 								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
-							<br>名<?= $this->Form->input('clientName2',array('size'=>'70'
+							<br><br>名<?= $this->Form->input('clientName2',array('size'=>'70'
 								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
 
 					</tr>

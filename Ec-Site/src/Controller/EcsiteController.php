@@ -42,14 +42,10 @@ class EcsiteController extends AppController {
 										$this->request->data['clientBirthMonth']."-".
 										$this->request->data['clientBirthday']
  			);
-			print_r($adddata);
-			print("\n");
-			print_r($this->request->data);
-// 			$tblClient = $this->tblClient->newEntity();
-// 			$tblClient = $this->tblClient->patchEntity($tblClient,$adddata);
+			$tbl = $this->tblClient->newEntity();
+			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
-// 			$this->tblClient->save($adddata);
-
+			$this->tblClient->save($tbl);
 		}
 	}
 }
