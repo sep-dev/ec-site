@@ -18,7 +18,7 @@ class EcsiteController extends AppController {
 	public function inputdata() {
 
 		//postデータが有るかの判断
-		if($this->request->is('post')) {
+		if($this->request->is('post')&&isset($this->request->data)) {
 
 			//入力データを登録できる型に変換
 			$adddata = array(
