@@ -17,6 +17,8 @@ class EcsiteController extends AppController {
 	public function inputdata() {
 		if($this->request->is('post')) {
 
+
+
 			$adddata = array(
 				'clientName'		=>	$this->request->data['clientName1'].
 										$this->request->data['clientName2'],
@@ -38,10 +40,11 @@ class EcsiteController extends AppController {
 				'clientKana' 		=>	$this->request->data['clientKana1'].
 										$this->request->data['clientKana2'],
 
-				'clientBirthday'	=>	$this->request->data['clientBirthyear']."-".
+				'clientBirthday'	=> strtotime ($this->request->data['clientBirthyear']."-".
 										$this->request->data['clientBirthMonth']."-".
-										$this->request->data['clientBirthday']
+										$this->request->data['clientBirthday'])
  			);
+			print_r($adddata['clientBirthday']);
 			$tbl = $this->tblClient->newEntity();
 			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
