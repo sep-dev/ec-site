@@ -49,6 +49,18 @@ class EcsiteController extends AppController {
 	public function shohindata($id = null) {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
+
+		// Sessionへ商品データの書き込み
+		$this -> Session -> write('Item.id', $tblitem -> itemId);
+		$this -> Session -> write('Item.img', $tblitem -> itemImg);
+		$this -> Session -> write('Item.name', $tblitem -> itemName);
+		$this -> Session -> write('Item.price', $tblitem -> itemPrice);
+
+		$this -> set('sesId', $this -> Session -> read('Item.id'));
+		$this -> set('sesImg', $this -> Session -> read('Item.img'));
+		$this -> set('sesName', $this -> Session -> read('Item.name'));
+		$this -> set('sesPrice', $this -> Session -> read('Item.price'));
+
 	}
 
 }
