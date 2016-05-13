@@ -11,14 +11,16 @@ class EcsiteController extends AppController {
 	}
 
 	public function initialize() {
+		//tblclientテーブルの参照
 		$this-> tblClient = TableRegistry::get('tblclient');
 	}
 
 	public function inputdata() {
+
+		//postデータが有るかの判断
 		if($this->request->is('post')) {
 
-
-
+			//入力データを登録できる型に変換
 			$adddata = array(
 				'clientName'		=>	$this->request->data['clientName1'].
 										$this->request->data['clientName2'],
@@ -44,10 +46,16 @@ class EcsiteController extends AppController {
 										$this->request->data['clientBirthMonth']."-".
 										$this->request->data['clientBirthday'])
  			);
+
+			//tblclientに登録するための変数宣言
 			$tbl = $this->tblClient->newEntity();
 			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
+			//tblclientにデータを登録
 			$this->tblClient->save($tbl);
+
+			//確認ページに遷移
+			return $this->redirect(array('action'=>'input_kakunin'));
 		}
 	}
 }
