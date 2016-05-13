@@ -15,6 +15,6 @@ create table tblItem(itemId int primary key not null auto_increment,
 					itemData nvarchar(1000),
 					itemCount int not null,
 					itemCategory int (255) not null,
-					itemImg MEDIUMBLOB);
+					itemImg varchar(255));
 create table tblCategory(categoryId int primary key not null auto_increment,
 					categoryName nvarchar(255) not null);
