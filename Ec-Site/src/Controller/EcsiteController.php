@@ -20,6 +20,7 @@ class EcsiteController extends AppController {
 		//postデータが有るかの判断
 		if($this->request->is('post')&&isset($this->request->data)) {
 
+
 			//入力データを登録できる型に変換
 			$adddata = array(
 				'clientName'		=>	$this->request->data['clientName1'].
@@ -47,7 +48,10 @@ class EcsiteController extends AppController {
 										$this->request->data['clientBirthday'])
  			);
 
-			//tblclientに登録するための変数宣言
+
+
+
+// 			tblclientに登録するための変数宣言
 			$tbl = $this->tblClient->newEntity();
 			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
@@ -55,7 +59,7 @@ class EcsiteController extends AppController {
 			$this->tblClient->save($tbl);
 
 			//確認ページに遷移
-			return $this->redirect(array('action'=>'input_kakunin'));
+// 			return $this->redirect(array('action'=>'input_kakunin'));
 		}
 	}
 }
