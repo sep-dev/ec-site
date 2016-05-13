@@ -1,7 +1,7 @@
 create database ec_site;
 connect ec_site;
-create table tblClient(cilentId int primary key not null auto_increment,
-					cilentName nvarchar(255) not null,
+create table tblClient(clientId int primary key not null auto_increment,
+					clientName nvarchar(255) not null,
 					clientKana nvarchar(255) not null,
 					clientSex nvarchar(255) not null,
 					clientBirthday date,
