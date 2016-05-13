@@ -12,7 +12,7 @@
 			<tr>
 				<td><?= h($tblcategory -> categoryId) ?></td>
 				<td><?= $this -> Html -> link($tblcategory -> categoryName, array(
-					'controller' => 'ecsite', 'action' => 'shohinlist', $tblcategory -> categoryId)) ?></td>
+					'controller' => 'ecsite', 'action' => 'shohinlist2', $tblcategory -> categoryId)) ?></td>
 			<tr>
 		<?php endforeach; ?>
 		</tbody>

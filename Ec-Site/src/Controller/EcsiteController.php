@@ -52,6 +52,26 @@ class EcsiteController extends AppController {
 		}
 	}
 
+	public function shohinlist2($id = null) {
+ 		$tblcategory = $this -> tblCategory -> find();
+ 		$this -> set(compact('tblcategory'));
+		$this -> set('tblitem', $this -> paginate($this -> tblItem));
+
+		$find = $this -> request -> data('find');
+		$tblitem = $this -> set('tblitem', $this -> tblItem -> find()
+					-> where(array('itemCategory' => $id)));
+
+		// POST送信された場合
+		if($this -> request -> is('post')) {
+			$find = $this -> request -> data('find');
+			// 検索フォームが空でない場合
+			if($find != null) {
+				$tblitem = $this -> set('tblitem', $this -> tblItem -> find()
+						-> where(array("concat(itemName, itemData, itemPrice) like " => '%' .$find . '%')));
+			}
+		}
+	}
+
 	public function shohindata($id = null) {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
@@ -66,7 +86,6 @@ class EcsiteController extends AppController {
 		$this -> set('sesImg', $this -> Session -> read('Item.img'));
 		$this -> set('sesName', $this -> Session -> read('Item.name'));
 		$this -> set('sesPrice', $this -> Session -> read('Item.price'));
-
 	}
 
 }

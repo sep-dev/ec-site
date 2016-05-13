@@ -9,8 +9,8 @@ class CategoryTable extends Table {
 	public function initialize(array $config) {
 		$this -> addBehavior('Timestamp');
 
-		$this -> hasMany('Item',
-				array('className' => 'Item'));
+		$this -> hasMany('tblItem',
+				array('className' => 'tblItem'));
 	}
 
 }
