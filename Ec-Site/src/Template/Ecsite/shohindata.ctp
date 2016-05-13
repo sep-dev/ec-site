@@ -11,8 +11,7 @@
 			for($num = 1; $num <= 5; $num++) {
 				array_push($selectnum, array(
 						'value' => $num, 'text' => $num));
-			}
-		?>
+			} ?>
 		<?= $this -> Form -> select('num', $selectnum) ?>
 		<?= $this -> Html -> link('Cart', array(
 				'controller' => 'Ecsite', 'action' => 'cart')) ?>

@@ -25,8 +25,14 @@ class EcsiteController extends AppController {
 	public function initialize() {
 		parent::initialize();
         $this -> loadComponent('Paginator');
-		// tblItemを参照できるように設定
-		$this -> tblItem = TableRegistry::get('tblitem');
+		// 参照テーブルを設定
+        $this -> tblItem = TableRegistry::get('tblitem');
+        $this -> tblCategory = TableRegistry::get('tblcategory');
+
+	}
+
+	public function index() {
+		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 	}
 
 	/**
