@@ -5,6 +5,10 @@
 		<?= $this -> Form -> input('find') ?>
 		<?= $this -> Form -> button('Find') ?>
 	</fieldset>
+
+	<!-- 戻るボタン -->
+	<?= $this -> Html -> link('Back', array(
+			'controller' => 'ecsite', 'action' => 'index')) ?>
 	<table>
 		<thead>
 			<tr>
