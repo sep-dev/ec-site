@@ -44,7 +44,6 @@ class EcsiteController extends AppController {
 										$this->request->data['clientBirthMonth']."-".
 										$this->request->data['clientBirthday'])
  			);
-			print_r($adddata['clientBirthday']);
 			$tbl = $this->tblClient->newEntity();
 			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
