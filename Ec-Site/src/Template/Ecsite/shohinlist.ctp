@@ -15,17 +15,24 @@
 			<tr>
 		<thead>
 		<tbody>
+
+	<!-- $tblitem配列をループして、商品リストの情報を表示 -->
 		<?php foreach ($tblitem as $tblitem): ?>
 			<tr>
 				<td><?= $tblitem -> itemName ?></td>
-				<td><img src="/ec-site/Ec-Site/image/<?= $tblitem -> itemImg ?>"></td>
+				<td>
+			<!-- 画像リンク -->
+				<?= $this -> Html -> link($this -> Html -> image('/image/' . $tblitem -> itemImg), array(
+						'controller' => 'ecsite', 'action' => 'shohindata', $tblitem -> itemId), array(
+								'escape' => false)) ?>
+				</td>
 				<td><?= $tblitem -> itemData ?></td>
 				<td>&yen;<?= $tblitem -> itemPrice ?></td>
 			<tr>
 		<?php endforeach; ?>
 		</tbody>
 	</table>
-	<!-- Paginator使用 -->
+	<!-- Paginator使用(5件表示) -->
 	<?= $this -> Paginator -> first('<<first'); ?>
 	<?= $this -> Paginator -> prev('<prev'); ?>
 	<?= $this -> Paginator -> numbers(); ?>
