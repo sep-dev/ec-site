@@ -57,16 +57,14 @@ class EcsiteController extends AppController {
 												$this->request->data['clientBirthMonth']."-".
 												$this->request->data['clientBirthday']
 		 			);
-					print_r($adddata);
 
-					// 			tblclientに登録するための変数宣言
+					//tblclientに登録するための変数宣言
 					$tbl = $this->tblClient->newEntity();
 					$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
-
-
-					if($this->tblClient->save($tbl)){
-						print("成功");
+					if($this->tblClient->save($tbl)) {
+						//確認ページに遷移
+						return $this->redirect(array('action'=>'input_kakunin'));
 					} else {
 						//エラー表示
 						$this->set('error','入力データが不正です!!!!!');
@@ -77,11 +75,6 @@ class EcsiteController extends AppController {
 				$this->set('error','メールアドレスが一致しません！！！！');
 			}
 
-			//tblclientにデータを登録
-// 			$this->tblClient->save($tbl);
-
-			//確認ページに遷移
-// 			return $this->redirect(array('action'=>'input_kakunin'));
 		}
 	}
 }
