@@ -36,7 +36,8 @@ class EcsiteController extends AppController {
 	}
 
 	/**
-	 * Shouhinlist method
+	 * Shohinlist method
+	 * All Data
 	 */
 	public function shohinlist() {
 		$this -> set('tblitem', $this -> paginate($this -> tblItem));
@@ -52,6 +53,11 @@ class EcsiteController extends AppController {
 		}
 	}
 
+	/**
+	 * Shohinlist2 method
+	 * By Category
+	 * @param unknown $id
+	 */
 	public function shohinlist2($id = null) {
  		$tblcategory = $this -> tblCategory -> find();
  		$this -> set(compact('tblcategory'));

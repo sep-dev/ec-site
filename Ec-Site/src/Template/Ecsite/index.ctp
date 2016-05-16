@@ -1,5 +1,8 @@
 <div>
 	<h3>商品一覧</h3>
+
+	<?= $this -> Html -> link('All Data', array(
+			'controller' => 'ecsite', 'action' => 'shohinlist')) ?>
 	<table>
 		<thead>
 			<tr>

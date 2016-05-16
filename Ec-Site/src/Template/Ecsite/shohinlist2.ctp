@@ -1,5 +1,7 @@
 <div>
 	<h3>商品一覧</h3>
+	<?= $this -> Form -> create() ?>
+
 	<!-- 検索機能 -->
 	<fieldset>
 		<?= $this -> Form -> input('find') ?>
@@ -9,27 +11,31 @@
 	<!-- 戻るボタン -->
 	<?= $this -> Html -> link('Back', array(
 			'controller' => 'ecsite', 'action' => 'index')) ?>
-	<!-- カテゴリ別予想 -->
+	<!-- カテゴリ別 -->
 	<table>
-		<tr>
-			<th>Name</th>
-			<th>Image</th>
-			<th>Data</th>
-			<th>Price</th>
-		</tr>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Image</th>
+				<th>Data</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
 		<?php foreach ($tblitem as $tblitem): ?>
-		<tr>
-			<td><?= $tblitem -> itemName ?></td>
-			<td>
+			<tr>
+				<td><?= $tblitem -> itemName ?></td>
+				<td>
 			<!-- 画像リンク -->
-			<?= $this -> Html -> link($this -> Html -> image('/image/' . $tblitem -> itemImg), array(
-					'controller' => 'ecsite', 'action' => 'shohindata', $tblitem -> itemId), array(
-							'escape' => false)) ?>
-			</td>
-			<td><?= $tblitem -> itemData ?></td>
-			<td><?= $tblitem -> itemPrice ?></td>
-		</tr>
+				<?= $this -> Html -> link($this -> Html -> image('/image/' . $tblitem -> itemImg), array(
+						'controller' => 'ecsite', 'action' => 'shohindata', $tblitem -> itemId), array(
+								'escape' => false)) ?>
+				</td>
+				<td><?= $tblitem -> itemData ?></td>
+				<td>&yen;<?= $tblitem -> itemPrice ?></td>
+			</tr>
 		<?php endforeach; ?>
+		</tbody>
 	</table>
 	<!-- Paginator使用(5件表示) -->
 	<?= $this -> Paginator -> first('<<first'); ?>

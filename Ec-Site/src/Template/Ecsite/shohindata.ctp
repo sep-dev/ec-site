@@ -14,8 +14,11 @@
 			} ?>
 		<?= $this -> Form -> select('num', $selectnum) ?>
 		<?= $this -> Html -> link('Cart', array(
-				'controller' => 'Ecsite', 'action' => 'cart')) ?>
+				'controller' => 'Ecsite', 'action' => 'cart', $num)) ?>
 	</fieldset>
+	<?= $this -> Form -> submit('Cart', array(
+				'controller' => 'Ecsite', 'action' => 'cart')) ?>
+	<?= $this -> Form -> end() ?>
 	<p>セッション格納情報</p>
 	<?= h($sesId) ?>
 	<?= h($sesImg) ?>

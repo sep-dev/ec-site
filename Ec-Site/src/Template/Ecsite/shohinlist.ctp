@@ -11,6 +11,7 @@
 	<!-- 戻るボタン -->
 	<?= $this -> Html -> link('Back', array(
 			'controller' => 'ecsite', 'action' => 'index')) ?>
+
 	<table>
 		<thead>
 			<tr>
@@ -21,7 +22,6 @@
 			<tr>
 		<thead>
 		<tbody>
-
 	<!-- $tblitem配列をループして、商品リストの情報を表示 -->
 		<?php foreach ($tblitem as $tblitem): ?>
 			<tr>
