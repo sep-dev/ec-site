@@ -1,5 +1,5 @@
 <div>
-	<h3>全商品一覧</h3>
+	<h3>カテゴリー別一覧</h3>
 	<?= $this -> Form -> create() ?>
 
 	<!-- 検索機能 -->
@@ -39,9 +39,9 @@
 		</tbody>
 	</table>
 	<!-- Paginator使用(5件表示) -->
-	<?= $this -> Paginator -> first('<<first'); ?>
-	<?= $this -> Paginator -> prev('<prev'); ?>
+	<?= $this -> Paginator -> first('<<First'); ?>
+	<?= $this -> Paginator -> prev('<Prev'); ?>
 	<?= $this -> Paginator -> numbers(); ?>
-	<?= $this -> Paginator -> next('next>'); ?>
-	<?= $this -> Paginator -> last('last>>'); ?>
+	<?= $this -> Paginator -> next('Next>'); ?>
+	<?= $this -> Paginator -> last('Last>>'); ?>
 </div>

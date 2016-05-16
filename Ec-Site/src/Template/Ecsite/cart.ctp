@@ -1,15 +1,24 @@
 <div>
 	<h3>Cart</h3>
-	<!-- 戻るボタン -->
-	<?= $this -> Html -> link('Back', array(
-			'controller' => 'ecsite', 'action' => 'shohinlist')) ?>
-	<p>セッション格納情報</p>
-		<?= h($sesId) ?>
-		<?= h($sesImg) ?>
-		<?= h($sesName) ?>
-		<?= h($sesPrice) ?>
-		<?= h($sesNum) ?>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Image</th>
+				<th>Num</th>
+				<th>Price</th>
+			<tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><?= h($sesName) ?></td>
+				<td><?= $this -> Html -> image('/image/' . $sesImg) ?></td>
+				<td><?= h($sesNum) ?></td>
+				<td>&yen;<?= h($sesNum * $sesPrice) ?></td>
+			<tr>
+		</tbody>
+	</table>
 	<!-- 続ける場合は、配列にセッション情報を格納 -->
 	<?= $this -> Html -> link('続ける', array(
-			'controller' => 'ecsite', 'action' => 'index')) ?>
+			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
 </div>
