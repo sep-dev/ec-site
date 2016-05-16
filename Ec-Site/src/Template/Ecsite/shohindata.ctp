@@ -6,7 +6,7 @@
 	)) ?>
 	<!-- 戻るボタン -->
 	<?= $this -> Html -> link('Back', array(
-			'controller' => 'ecsite', 'action' => 'shohinlist')) ?>
+			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
 	<fieldset>
 		<p><?= $this -> Html -> image('/image/' .$tblitem -> itemImg)?></p>
 		<p><?= h($tblitem -> itemData) ?></p>

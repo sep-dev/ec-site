@@ -54,16 +54,17 @@ class EcsiteController extends AppController {
 	}
 
 	/**
-	 * Shohinlist2 method
+	 * Categorylist method
 	 * By Category
 	 * @param unknown $id
 	 */
 	public function categorylist($id = null) {
+		$this -> Session -> write('Category.id', $id);
  		$tblcategory = $this -> tblCategory -> find();
  		$this -> set(compact('tblcategory'));
-		$this -> set('tblitem', $this -> paginate($this -> tblItem));
+		$this -> set('tblitem', $this -> paginate($this -> tblItem -> find()
+					-> where(array('itemCategory' => $id))));
 
-		$find = $this -> request -> data('find');
 		$tblitem = $this -> set('tblitem', $this -> tblItem -> find()
 					-> where(array('itemCategory' => $id)));
 
@@ -86,6 +87,9 @@ class EcsiteController extends AppController {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
 
+		// Sessionの読み込み
+		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
+
 		// Sessionへ商品データの書き込み
 		$this -> Session -> write('Item.id', $tblitem -> itemId);
 		$this -> Session -> write('Item.img', $tblitem -> itemImg);
@@ -93,15 +97,26 @@ class EcsiteController extends AppController {
 		$this -> Session -> write('Item.price', $tblitem -> itemPrice);
 	}
 
+	/**
+	 * Cart method
+	 */
 	public function cart() {
-		// セレクトボックスの値をセッションへ書き込む
+		// SelectBoxの値をSessionへ書き込む
 		$this -> Session -> write('Item.num', $this -> request -> data('num'));
 
+		// Sessionの読み込み
+		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 		$this -> set('sesId', $this -> Session -> read('Item.id'));
 		$this -> set('sesImg', $this -> Session -> read('Item.img'));
 		$this -> set('sesName', $this -> Session -> read('Item.name'));
 		$this -> set('sesPrice', $this -> Session -> read('Item.price'));
 		$this -> set('sesNum', $this -> Session -> read('Item.num'));
+
+		// POST送信された場合
+		if($this -> request -> is('post')) {
+			// sesCategoryidを削除する
+			$this -> Session -> delete('sesCategoryid');
+		}
 	}
 
 }
