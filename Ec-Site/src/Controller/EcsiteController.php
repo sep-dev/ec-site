@@ -59,14 +59,10 @@ class EcsiteController extends AppController {
 	 * @param unknown $id
 	 */
 	public function categorylist($id = null) {
+		// カテゴリ番号をSessionへ書き込む
 		$this -> Session -> write('Category.id', $id);
- 		$tblcategory = $this -> tblCategory -> find();
- 		$this -> set(compact('tblcategory'));
-		$this -> set('tblitem', $this -> paginate($this -> tblItem -> find()
+		$tblitem = $this -> set('tblitem', $this -> paginate($this -> tblItem -> find()
 					-> where(array('itemCategory' => $id))));
-
-		$tblitem = $this -> set('tblitem', $this -> tblItem -> find()
-					-> where(array('itemCategory' => $id)));
 
 		// POST送信された場合
 		if($this -> request -> is('post')) {
