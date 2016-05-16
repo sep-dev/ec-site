@@ -32,7 +32,7 @@
 								メールアドレス<span>※</span>
 							</div></th>
 						<td>
-						<?= $this->Form->input('clientMailAddress',array('size'=>'70'
+						<?= $this->Form->input('clientMailAddress1',array('size'=>'70'
 								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
 						</td>
 					</tr>
@@ -41,7 +41,7 @@
 								メールアドレス(確認用)<span>※</span>
 							</div></th>
 						<td>
-							<?= $this->Form->input('Mail_kakunin',array('size'=>'70'
+							<?= $this->Form->input('clientMailAddress2',array('size'=>'70'
 								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
 						</td>
 					</tr>
@@ -161,6 +161,11 @@
 
 				<?= $this->Form->button('カートに戻る',array('formaction'=>'cart')) ?>
 				<?= $this->Form->button('入力情報の確認') ?>
+				<?php
+					if(!empty($error)){
+						print("<h2 ><font color=\"red\">$error</font></h2>");
+					}
+				?>
 			</div>
 		</div>
 	</div>

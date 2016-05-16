@@ -29,45 +29,52 @@ class EcsiteController extends AppController {
 
 		//postデータが有るかの判断
 		if($this->request->is('post')&&isset($this->request->data)) {
+				//メールアドレスが確認用と同じかを判断
+				if ($this->request->data['clientMailAddress1']==$this->request->data['clientMailAddress2']) {
+				//入力データを登録できる型に変換
+					$adddata = array(
+						'clientName'		=>	$this->request->data['clientName1'].
+												$this->request->data['clientName2'],
+
+						'clientPostCode'	=>	$this->request->data['clientPostCode1'].
+												$this->request->data['clientPostCode2'],
+
+						'clientAdd' 		=>	$this->request->data['clientAdd1'].
+												$this->request->data['clientAdd2'],
+
+						'clientTel'			=>	$this->request->data['clientTel1'].
+												$this->request->data['clientTel2'].
+												$this->request->data['clientTel3'],
+
+						'clientMailAddress'	=>	$this->request->data['clientMailAddress1'],
+
+						'clientSex' 		=>	$this->request->data['clientSex'],
+
+						'clientKana' 		=>	$this->request->data['clientKana1'].
+												$this->request->data['clientKana2'],
+
+						'clientBirthday'	=> $this->request->data['clientBirthyear']."-".
+												$this->request->data['clientBirthMonth']."-".
+												$this->request->data['clientBirthday']
+		 			);
+					print_r($adddata);
+
+					// 			tblclientに登録するための変数宣言
+					$tbl = $this->tblClient->newEntity();
+					$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
 
-			//入力データを登録できる型に変換
-			$adddata = array(
-				'clientName'		=>	$this->request->data['clientName1'].
-										$this->request->data['clientName2'],
 
-				'clientPostCode'	=>	$this->request->data['clientPostCode1'].
-										$this->request->data['clientPostCode2'],
+					if($this->tblClient->save($tbl)){
+						print("成功");
+					} else {
+						//エラー表示
+						$this->set('error','入力データが不正です!!!!!');
+					}
 
-				'clientAdd' 		=>	$this->request->data['clientAdd1'].
-										$this->request->data['clientAdd2'],
-
-				'clientTel'			=>	$this->request->data['clientTel1'].
-										$this->request->data['clientTel2'].
-										$this->request->data['clientTel3'],
-
-				'clientMailAddress'	=>	$this->request->data['clientMailAddress'],
-
-				'clientSex' 		=>	$this->request->data['clientSex'],
-
-				'clientKana' 		=>	$this->request->data['clientKana1'].
-										$this->request->data['clientKana2'],
-
-				'clientBirthday'	=> $this->request->data['clientBirthyear']."-".
-										$this->request->data['clientBirthMonth']."-".
-										$this->request->data['clientBirthday']
- 			);
-
-			print_r($adddata);
-
-// 			tblclientに登録するための変数宣言
-			$tbl = $this->tblClient->newEntity();
-			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
-
-			if($this->tblClient->save($tbl)){
-				print("成功");
 			} else {
-				print("失敗");
+				//エラー表示
+				$this->set('error','メールアドレスが一致しません！！！！');
 			}
 
 			//tblclientにデータを登録
