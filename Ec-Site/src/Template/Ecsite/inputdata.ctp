@@ -158,15 +158,9 @@
 				</table>
 				<!-- お客様情報入力ここまで↑ -->
 				<br>
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-				<!-- 二度押しを防止するためボタンをdisabledする処理 -->
-				<script>
-					function disbutton(obj){
-						obj.disabled = true;
-					}
-				</script>
+
 				<?= $this->Form->button('カートに戻る',array('formaction'=>'cart')) ?>
-				<?= $this->Form->button('入力情報の確認',array('onclick'=>'disbutton(this);')) ?>
+				<?= $this->Form->button('入力情報の確認') ?>
 			</div>
 		</div>
 	</div>

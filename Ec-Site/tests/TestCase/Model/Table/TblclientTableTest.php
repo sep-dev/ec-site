@@ -52,21 +52,11 @@ class TblclientTableTest extends TestCase
     }
 
     /**
-     * Test initialize method
+     * Test initial setup
      *
      * @return void
      */
-    public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test validationDefault method
-     *
-     * @return void
-     */
-    public function testValidationDefault()
+    public function testInitialization()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

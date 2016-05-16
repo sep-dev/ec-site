@@ -54,7 +54,7 @@ class TblclientFixture extends TestFixture
             'clientName' => 'Lorem ipsum dolor sit amet',
             'clientKana' => 'Lorem ipsum dolor sit amet',
             'clientSex' => 'Lorem ipsum dolor sit amet',
-            'clientBirthday' => '2016-05-13',
+            'clientBirthday' => '2016-05-16',
             'clientPostCode' => 'Lorem ',
             'clientAdd' => 'Lorem ipsum dolor sit amet',
             'clientTel' => 'Lorem ipsum dolor ',

@@ -7,8 +7,17 @@ use Cake\ORM\TableRegistry;
 
 class EcsiteController extends AppController {
 
+
+
 	public function cart() {
 	}
+
+	public $validate = array(
+			'clientName' => array(
+					'rule' => 'notEmpty',
+					'message'=>'名前を入力してください'
+			)
+	);
 
 	public function initialize() {
 // 		parent::initialize();
@@ -44,18 +53,25 @@ class EcsiteController extends AppController {
 				'clientKana' 		=>	$this->request->data['clientKana1'].
 										$this->request->data['clientKana2'],
 
-				'clientBirthday'	=> strtotime ($this->request->data['clientBirthyear']."-".
+				'clientBirthday'	=> $this->request->data['clientBirthyear']."-".
 										$this->request->data['clientBirthMonth']."-".
-										$this->request->data['clientBirthday'])
+										$this->request->data['clientBirthday']
  			);
 
+			print_r($adddata);
 
 // 			tblclientに登録するための変数宣言
 			$tbl = $this->tblClient->newEntity();
 			$tbl = $this->tblClient->patchEntity($tbl,$adddata);
 
+			if($this->tblClient->save($tbl)){
+				print("成功");
+			} else {
+				print("失敗");
+			}
+
 			//tblclientにデータを登録
-			$this->tblClient->save($tbl);
+// 			$this->tblClient->save($tbl);
 
 			//確認ページに遷移
 // 			return $this->redirect(array('action'=>'input_kakunin'));
