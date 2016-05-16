@@ -1,8 +1,5 @@
 <div>
 	<h3>商品一覧</h3>
-
-	<?= $this -> Html -> link('All Data', array(
-			'controller' => 'ecsite', 'action' => 'shohinlist')) ?>
 	<table>
 		<thead>
 			<tr>
@@ -11,6 +8,11 @@
 			<tr>
 		<thead>
 		<tbody>
+			<tr>
+				<td>0</td>
+				<td><?= $this -> Html -> link('全リスト', array(
+						'controller' => 'ecsite', 'action' => 'shohinlist')) ?></td>
+			<tr>
 		<?php foreach ($tblcategory as $tblcategory): ?>
 			<tr>
 				<td><?= h($tblcategory -> categoryId) ?></td>

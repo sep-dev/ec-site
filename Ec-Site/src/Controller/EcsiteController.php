@@ -78,6 +78,10 @@ class EcsiteController extends AppController {
 		}
 	}
 
+	/**
+	 * Shohindata method
+	 * @param unknown $id
+	 */
 	public function shohindata($id = null) {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
@@ -87,11 +91,17 @@ class EcsiteController extends AppController {
 		$this -> Session -> write('Item.img', $tblitem -> itemImg);
 		$this -> Session -> write('Item.name', $tblitem -> itemName);
 		$this -> Session -> write('Item.price', $tblitem -> itemPrice);
+	}
+
+	public function cart() {
+		// セレクトボックスの値をセッションへ書き込む
+		$this -> Session -> write('Item.num', $this -> request -> data('num'));
 
 		$this -> set('sesId', $this -> Session -> read('Item.id'));
 		$this -> set('sesImg', $this -> Session -> read('Item.img'));
 		$this -> set('sesName', $this -> Session -> read('Item.name'));
 		$this -> set('sesPrice', $this -> Session -> read('Item.price'));
+		$this -> set('sesNum', $this -> Session -> read('Item.num'));
 	}
 
 }
