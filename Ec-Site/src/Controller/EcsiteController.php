@@ -58,7 +58,7 @@ class EcsiteController extends AppController {
 	 * By Category
 	 * @param unknown $id
 	 */
-	public function shohinlist2($id = null) {
+	public function categorylist($id = null) {
  		$tblcategory = $this -> tblCategory -> find();
  		$this -> set(compact('tblcategory'));
 		$this -> set('tblitem', $this -> paginate($this -> tblItem));
