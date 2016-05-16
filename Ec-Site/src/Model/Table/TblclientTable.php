@@ -61,7 +61,7 @@ class TblclientTable extends table
             ->requirePresence('clientKana', 'create')
             ->notEmpty('clientKane',array('message'=>'カナが未入力です'))
             ->add('clientKana','validFormat',array(
-            		'rule'=>array('custom','/^[ァ-ヶ]+$/i'),
+            		'rule'=>array('custom','/^[ァ-ヾ]+$/u'),
             		'message' => 'カナが不正です！！'
             ));
 
