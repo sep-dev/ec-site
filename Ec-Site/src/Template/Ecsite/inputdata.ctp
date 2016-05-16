@@ -14,6 +14,7 @@
 <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 </head>
 <body>
+<?= $this->Form->create(null,array('type'=>'post'))?>
 	<div id="contents">
 		<br> <br>
 		<div align="center">
@@ -26,14 +27,13 @@
 							<span>※</span>は必須項目です。
 						</p>
 					</caption>
-					<?= $this->Form->create(null,array('type'=>'post'))?>
 					<tr align="center">
 						<th colspan="2" bgcolor="#A4A4A4"><div>
 								メールアドレス<span>※</span>
 							</div></th>
 						<td>
 						<?= $this->Form->input('clientMailAddress1',array('size'=>'70'
-								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
+								,'maxlength'=>'80','label'=>false)) ?>
 						</td>
 					</tr>
 					<tr align="center">
@@ -42,7 +42,7 @@
 							</div></th>
 						<td>
 							<?= $this->Form->input('clientMailAddress2',array('size'=>'70'
-								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
+								,'maxlength'=>'80','label'=>false)) ?>
 						</td>
 					</tr>
 					<tr align="center">
@@ -51,9 +51,9 @@
 							</div></th>
 						<td>
 							姓<?= $this->Form->input('clientName1',array('size'=>'70'
-								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
+								,'maxlength'=>'80','label'=>false)) ?>
 							<br><br>名<?= $this->Form->input('clientName2',array('size'=>'70'
-								,'maxlength'=>'80','value'=>'','label'=>false)) ?>
+								,'maxlength'=>'80','label'=>false)) ?>
 
 					</tr>
 					<tr align="center">
@@ -62,9 +62,9 @@
 							</div></th>
 						<td>
 							セイ<?= $this->Form->input('clientKana1',array('maxlength'=>'40'
-								,'value'=>'','label'=>false)) ?>
+								,'label'=>false)) ?>
 							メイ<?= $this->Form->input('clientKana2',array('maxlength'=>'40'
-									,'value'=>'','label'=>false)) ?>
+									,'label'=>false)) ?>
 						</td>
 					</tr>
 					<tr align="center">
@@ -110,10 +110,10 @@
 							</div></th>
 						<td>
 							<?= $this->Form->input('clientPostCode1',array('maxlength'=>'3','size'=>'6'
-								,'value'=>'','label'=>false,'before')) ?>
+								,'label'=>false,'before')) ?>
 							-
 							<?= $this->Form->input('clientPostCode2',array('maxlength'=>'4','size'=>'8'
-								,'value'=>'','label'=>false,'div'=>false)) ?>
+								,'label'=>false,'div'=>false)) ?>
 							<button type="button" name="addAdd" value="自動住所入力"onClick="AjaxZip3.zip2addr
 								('clientPostCode1','clientPostCode2','clientAdd1','clientAdd2');">自動住所入力</button>
 						</td>
@@ -137,7 +137,7 @@
 							</div></th>
 						<td>
 							<?= $this->Form->input('clientAdd2',array('maxlength'=>'40','size'=>'30'
-									,'value'=>'','label'=>false)) ?>
+									,'label'=>false)) ?>
 						</td>
 					</tr>
 					<tr align="center">
@@ -146,13 +146,13 @@
 							</div></th>
 						<td>
 							<?= $this->Form->input('clientTel1',array('maxlength'=>'4','size'=>'4'
-									,'value'=>'','label'=>false)) ?>
+									,'label'=>false)) ?>
 							-
 							<?= $this->Form->input('clientTel2',array('maxlength'=>'4','size'=>'4'
-									,'value'=>'','label'=>false)) ?>
+									,'label'=>false)) ?>
 							-
 							<?= $this->Form->input('clientTel3',array('maxlength'=>'4','size'=>'4'
-									,'value'=>'','label'=>false)) ?>
+									,'label'=>false)) ?>
 						</td>
 					</tr>
 				</table>
@@ -162,8 +162,17 @@
 				<?= $this->Form->button('カートに戻る',array('formaction'=>'cart')) ?>
 				<?= $this->Form->button('入力情報の確認') ?>
 				<?php
+
+					if(!empty($errormail)){
+						echo ("<h2 ><font color=\"red\">$errormail</font></h2>");
+					}
+
 					if(!empty($error)){
-						print("<h2 ><font color=\"red\">$error</font></h2>");
+						foreach ($error as $key => $value){
+							foreach ($value as $value){
+								echo ("<h2 ><font color=\"red\">$value</font></h2>");
+							}
+						}
 					}
 				?>
 			</div>
