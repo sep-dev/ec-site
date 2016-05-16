@@ -43,6 +43,8 @@ class TblclientTable extends Table
 
         $validator
             ->requirePresence('clientName', 'create')
+            ->add('clientName','validFormat',array(
+            		'rule'=>array('custom','/^[ぁ-んァ-ヶー一-龠]+$/i')))
             ->notEmpty('clientName');
 
         $validator
