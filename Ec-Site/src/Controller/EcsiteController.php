@@ -12,15 +12,14 @@ use PhpParser\Node\Stmt\ElseIf_;
 
 class EcsiteController extends AppController {
 
-
-	public function cart() {
-	}
-
 	public function initialize() {
-// 		parent::initialize();
-// 		//tblclientテーブルの参照
-		$this-> tblClient = TableRegistry::get('tblclient');
+ 		parent::initialize();
 		$this->Session = $this->request->session();
+		$this -> loadComponent('Paginator');
+		// 参照テーブルを設定
+		$this -> tblItem = TableRegistry::get('tblitem');
+		$this -> tblCategory = TableRegistry::get('tblcategory');
+		$this-> tblClient = TableRegistry::get('tblclient');
 	}
 
 	public function inputdata() {
@@ -104,14 +103,7 @@ class EcsiteController extends AppController {
 	 * {@inheritDoc}
 	 * @see \App\Controller\AppController::initialize()
 	 */
-	public function initialize() {
-		parent::initialize();
-        $this -> loadComponent('Paginator');
-		// 参照テーブルを設定
-        $this -> tblItem = TableRegistry::get('tblitem');
-        $this -> tblCategory = TableRegistry::get('tblcategory');
 
-	}
 
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
