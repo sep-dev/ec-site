@@ -43,6 +43,8 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        // Sessionの用意
+        $this->Session = $this->request->session();		// 追加
     }
 
     /**
