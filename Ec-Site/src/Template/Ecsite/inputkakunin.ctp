@@ -20,15 +20,15 @@
 				</caption>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">メールアドレス</th>
-					<td><?= ($adddata['clientMailAddress']) ?></td>
+					<td><?= ($adddata['clientMailAddress1'])?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">お名前</th>
-					<td><?= ($adddata['clientName']) ?></td>
+					<td><?= ($adddata['clientName1']),($adddata['clientName1']) ?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">フリガナ</th>
-					<td><?= ($adddata['clientKana']) ?></td>
+					<td><?= ($adddata['clientKana1']),($adddata['clientKana2']) ?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">性別</th>
@@ -36,19 +36,21 @@
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">生年月日</th>
-					<td><?= ($adddata['clientBirthday']) ?></td>
+					<td><?= ($adddata['clientBirthyear']),"年",($adddata['clientBirthMonth']),"月",
+								($adddata['clientBirthday']),"日"?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">郵便番号</th>
-					<td><?= ($adddata['clientPostCode']) ?></td>
+					<td><?= ($adddata['clientPostCode1']),"-",($adddata['clientPostCode2']) ?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">住所</th>
-					<td><?= ($adddata['clientAdd']) ?></td>
+					<td><?= ($adddata['clientAdd1']),"県",($adddata['clientAdd2']) ?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">お電話番号</th>
-					<td><?= ($adddata['clientTel']) ?></td>
+					<td><?= ($adddata['clientTel1']),"-",($adddata['clientTel2']),"-",
+							($adddata['clientTel3'])?></td>
 				</tr>
 			</table>
 			<br>

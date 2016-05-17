@@ -76,36 +76,7 @@ class EcsiteController extends AppController {
 
 	public function inputkakunin(){
 
-					$adddata = array(
-						'clientName'		=>	$this->request->data['clientName1'].
-												$this->request->data['clientName2'],
-
-						'clientPostCode'	=>	$this->request->data['clientPostCode1'].
-												"-".
-												$this->request->data['clientPostCode2'],
-
-						'clientAdd' 		=>	$this->request->data['clientAdd1'].
-												$this->request->data['clientAdd2'],
-
-						'clientTel'			=>	$this->request->data['clientTel1']."-".
-												$this->request->data['clientTel2']."-".
-												$this->request->data['clientTel3'],
-
-						'clientMailAddress'	=>	$this->request->data['clientMailAddress1'],
-
-						'clientSex' 		=>	$this->request->data['clientSex'],
-
-						'clientKana' 		=>	$this->request->data['clientKana1'].
-												$this->request->data['clientKana2'],
-
-						'clientBirthday'	=> $this->request->data['clientBirthyear'].
-												"-".
-												$this->request->data['clientBirthMonth'].
-												"-".
-												$this->request->data['clientBirthday']
-		 			);
-
-					$this->set('adddata',$adddata);
+					$this->set('adddata',$this->request->data);
 
 	}
 }
