@@ -39,7 +39,9 @@
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">性別</th>
-					<td><?= ($adddata['clientSex']) ?></td>
+					<td><?= ($adddata['clientSex']) ?>
+						<?= $this->Form->hidden('clientSex' ,
+								array('value' => ($adddata['clientSex'])));?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">生年月日</th>
@@ -53,7 +55,7 @@
 					<th colspan="2" bgcolor="#A4A4A4">郵便番号</th>
 					<td><?= ($adddata['clientPostCode1']),"-",($adddata['clientPostCode2']) ?>
 						<?= $this->Form->hidden('clientPostCode' ,
-								array('value' => ($adddata['clientPostCode1']).($adddata['clientPostCode2'])));?></td>
+								array('value' => ($adddata['clientPostCode1'])."-".($adddata['clientPostCode2'])));?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">住所</th>
@@ -76,7 +78,7 @@
 				<?= $this->Form->button('お客様情報入力画面に戻る',array('formaction'=>'inputdata')) ?>
 				<br>
 				<br>
-				<?= $this->Form->button('この内容で登録する',array('formaction'=>'buykakunin')) ?>
+				<?= $this->Form->button('この内容で登録する') ?>
 			</div>
 		</div>
 </body>

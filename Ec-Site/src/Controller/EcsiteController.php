@@ -27,7 +27,7 @@ class EcsiteController extends AppController {
 
 
 		//postデータが有るかの判断
-		if($this->request->is('post')&&isset($this->request->data)) {
+		if($this->request->is('post')&&isset($this->request->data['clientName1'])) {
 				//メールアドレスが確認用と同じかを判断
 				if ($this->request->data['clientMailAddress1']==$this->request->data['clientMailAddress2']) {
 				//入力データを登録できる型に変換
@@ -78,7 +78,14 @@ class EcsiteController extends AppController {
 
 	public function inputkakunin() {
 
-					$this->set('adddata',$this->Session->read('clientdata'));
+		$this->set('adddata',$this->Session->read('clientdata'));
 
+		if($this->request->is('post')) {
+			$tblclient = $this->tblClient->newEntity();
+			$tblclient = $this->tblClient->patchEntity($tblclient,$this->request->data);
+			if($this->tblClient->save($tblclient)) {
+				$this->redirect(array('action'=>'buykakunin'));
+			}
+		}
 	}
 }
