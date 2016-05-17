@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 	<body>
+		<?= $this->Form->create(null,array('type'=>'post'))?>
 			<div align="center">
 				<table width="800" height="80" border="1" cellspacing="0" cellpadding="0">
 					<caption><font size="5">お支払い情報</font></caption>
@@ -30,6 +31,7 @@
 				</table>
 				<br>
 				<div align="center">
+					<?= $this->Form->button('カート画面に戻る',array('formaction'=>'cart')) ?>
 					<button type="button" name="go_cart">カート画面に戻る</button>
 					<br><br>
 				</div>
@@ -72,9 +74,9 @@
 				</table>
 				<br>
 				<div align="center">
-					<button type="button" name="go_input">お客様情報入力画面に戻る</button>
+					<?= $this->Form->button('お客様情報入力画面に戻る',array('formaction'=>'inputdata')) ?>
 					<br><br>
-					<button type="button" name="go_buy">この内容で確定する</button>
+					<?= $this->Form->button('この内容で確定する',array('formaction'=>'itembuy')) ?>
 				</div>
 			</div>
 		</div>

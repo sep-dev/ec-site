@@ -197,4 +197,8 @@ class EcsiteController extends AppController {
 						->where(array('clientId'=>$result->clientId));
 		$this->set('clientdata',$clientdata);
 	}
+
+	public function itembuy(){
+
+	}
 }

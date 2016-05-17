@@ -172,11 +172,20 @@ return [
             'host' => 'localhost',
             'port' => 25,
             'timeout' => 30,
-            'username' => 'user',
-            'password' => 'secret',
+            'username' => 'arigakoyo',
+            'password' => 'f8SKMvH1',
             'client' => null,
             'tls' => null,
         ],
+    'sakura' => [
+    		'className' => 'smtp',
+    		'host' => 'se-project.sakura.ne.jp',
+    		'port' => 587,
+    		'timeout' => 30,
+    		'username' => 'arigakoyo@se-project.sakura.ne.jp',
+    		'password' => 'f8SKMvH1',
+    		'tls' => true,
+    ],
     ],
 
     /**
