@@ -61,7 +61,7 @@
 					<th colspan="2" bgcolor="#A4A4A4">住所</th>
 					<td><?= ($adddata['clientAdd1']),($adddata['clientAdd2']) ?>
 						<?= $this->Form->hidden('clientAdd' ,
-								array('value' => ($adddata['clientAdd1'])."県".($adddata['clientAdd2'])));?></td>
+								array('value' => ($adddata['clientAdd1']).($adddata['clientAdd2'])));?></td>
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">お電話番号</th>
