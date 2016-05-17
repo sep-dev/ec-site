@@ -1,6 +1,2 @@
 /config/app.php
-<<<<<<< HEAD
-=======
-/tmp/*
-/logs/*
->>>>>>> e4fcadee0c565ab8ab05dab63b1315e8f11d642e
+/logs/
