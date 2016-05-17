@@ -188,4 +188,8 @@ class EcsiteController extends AppController {
 			$this -> Session -> delete('sesCategoryid');
 		}
 	}
+
+	public function buykakunin(){
+
+	}
 }
