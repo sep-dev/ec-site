@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
-<<<<<<< HEAD
 use Cake\Validation\Validation;
 use App\Model\Entity\Tblclient;
 use App\Model\Table\TblclientTable;
@@ -89,9 +88,6 @@ class EcsiteController extends AppController {
 			}
 		}
 	}
-=======
-
-class EcsiteController extends AppController {
 
 	public $paginate = array(
 			'limit' => 5
@@ -200,6 +196,4 @@ class EcsiteController extends AppController {
 			$this -> Session -> delete('sesCategoryid');
 		}
 	}
-
->>>>>>> ddb532eae4d75637727df804ceadcbc51ea7eb76
 }
