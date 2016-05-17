@@ -9,6 +9,7 @@ use App\Model\Entity\Tblclient;
 use App\Model\Table\TblclientTable;
 use Cake\Validation\Validator;
 use PhpParser\Node\Stmt\ElseIf_;
+use Cake\Test\Fixture\ThingsFixture;
 
 class EcsiteController extends AppController {
 
@@ -23,7 +24,6 @@ class EcsiteController extends AppController {
 	}
 
 	public function inputdata() {
-
 
 		//postデータが有るかの判断
 		if($this->request->is('post')&&isset($this->request->data['clientName1'])) {
@@ -82,7 +82,8 @@ class EcsiteController extends AppController {
 		if($this->request->is('post')) {
 			$tblclient = $this->tblClient->newEntity();
 			$tblclient = $this->tblClient->patchEntity($tblclient,$this->request->data);
-			if($this->tblClient->save($tblclient)) {
+			if($result=$this->tblClient->save($tblclient)) {
+				$this->Session->write('result',$result);
 				$this->redirect(array('action'=>'buykakunin'));
 			}
 		}
@@ -189,7 +190,11 @@ class EcsiteController extends AppController {
 		}
 	}
 
-	public function buykakunin(){
 
+	public function buykakunin(){
+		$result = $this->Session->read('result');
+		$clientdata = $this->tblClient->find()
+						->where(array('clientId'=>$result->clientId));
+		$this->set('clientdata',$clientdata);
 	}
 }

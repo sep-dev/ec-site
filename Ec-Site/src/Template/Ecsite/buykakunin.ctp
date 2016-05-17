@@ -37,36 +37,38 @@
 					<caption><font size="5">お客様情報</font></caption>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">メールアドレス</th>
-		 					<td>お客様のメールアドレス</td>
+		 					<?php foreach ($clientdata as $clientdata):?>
+		 					<td><?= h($clientdata->clientMailAddress) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">お名前</th>
-		 					<td>お客様のお名前</td>
+		 					<td><?= h($clientdata->clientName) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">フリガナ</th>
-		 					<td>お客様のフリガナ</td>
+		 					<td><?= h($clientdata->clientKana) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">性別</th>
-		 					<td>性別</td>
+		 					<td><?= h($clientdata->clientSex) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">生年月日</th>
-		 					<td>お客様の生年月日</td>
+		 					<td><?= h($clientdata->clientBirthday) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">郵便番号</th>
-		 					<td>お客様の郵便番号</td>
+		 					<td><?= h($clientdata->clientPostCode) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">住所</th>
-		 					<td>お客様の住所</td>
+		 					<td><?= h($clientdata->clientAdd) ?></td>
 		 				</tr>
 		 				<tr align="center">
 		 					<th colspan="2" bgcolor="#A4A4A4">お電話番号</th>
-		 					<td>お客様のお電話番号</td>
+		 					<td><?= h($clientdata->clientTel) ?></td>
 		 				</tr>
+		 				<?php endforeach;?>
 				</table>
 				<br>
 				<div align="center">
