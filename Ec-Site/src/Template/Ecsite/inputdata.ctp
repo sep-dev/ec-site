@@ -160,7 +160,7 @@
 				<br>
 
 				<?= $this->Form->button('カートに戻る',array('formaction'=>'cart')) ?>
-				<?= $this->Form->button('入力情報の確認',array('formaction'=>'inputkakunin')) ?>
+				<?= $this->Form->button('入力情報の確認') ?>
 				<?php
 
 					if(!empty($errormail)){

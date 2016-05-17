@@ -20,6 +20,7 @@ class EcsiteController extends AppController {
 // 		parent::initialize();
 // 		//tblclientテーブルの参照
 		$this-> tblClient = TableRegistry::get('tblclient');
+		$this->Session = $this->request->session();
 	}
 
 	public function inputdata() {
@@ -61,7 +62,8 @@ class EcsiteController extends AppController {
 
 					$validate = $this->tblClient->newEntity($adddata);
 					if(!$validate->errors()) {
-
+						$this->Session->write('clientdata',$this->request->data);
+						return $this->redirect(array('action' => 'inputkakunin'));
 					} else {
 						$errors = $validate->errors();
 						$this->set('error',$errors);
@@ -74,9 +76,9 @@ class EcsiteController extends AppController {
 		}
 	}
 
-	public function inputkakunin(){
+	public function inputkakunin() {
 
-					$this->set('adddata',$this->request->data);
+					$this->set('adddata',$this->Session->read('clientdata'));
 
 	}
 }
