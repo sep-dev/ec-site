@@ -2,7 +2,7 @@
 	<h3>商品詳細: <?= h($tblitem -> itemName) ?></h3>
 	<?= $this -> Form -> create(null, array(
 			'type' => 'post',
-			'url' => array('controller' => 'Ecsite', 'action' => 'cart')
+			'url' => array('controller' => 'ecsite', 'action' => 'cart')
 	)) ?>
 	<!-- 戻るボタン -->
 	<?= $this -> Html -> link('Back', array(

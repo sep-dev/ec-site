@@ -17,6 +17,8 @@ class EcsiteController extends AppController {
 			)
 	);
 
+	//public $testarray = array();
+
 	/**
 	 * Initialize method
 	 * {@inheritDoc}
@@ -28,7 +30,6 @@ class EcsiteController extends AppController {
 		// 参照テーブルを設定
         $this -> tblItem = TableRegistry::get('tblitem');
         $this -> tblCategory = TableRegistry::get('tblcategory');
-
 	}
 
 	public function index() {
@@ -87,9 +88,8 @@ class EcsiteController extends AppController {
 		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 
 		// Sessionへ商品データの書き込み
-		$this -> Session -> write('Item.id', $tblitem -> itemId);
-		$this -> Session -> write('Item.img', $tblitem -> itemImg);
 		$this -> Session -> write('Item.name', $tblitem -> itemName);
+		$this -> Session -> write('Item.img', $tblitem -> itemImg);
 		$this -> Session -> write('Item.price', $tblitem -> itemPrice);
 	}
 
@@ -97,21 +97,45 @@ class EcsiteController extends AppController {
 	 * Cart method
 	 */
 	public function cart() {
+		$cartitemlist = array();
+
+		$cartitemlist = $this -> Session -> read('cartitemlist');
+
 		// SelectBoxの値をSessionへ書き込む
 		$this -> Session -> write('Item.num', $this -> request -> data('num'));
 
 		// Sessionの読み込み
 		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
-		$this -> set('sesId', $this -> Session -> read('Item.id'));
-		$this -> set('sesImg', $this -> Session -> read('Item.img'));
-		$this -> set('sesName', $this -> Session -> read('Item.name'));
-		$this -> set('sesPrice', $this -> Session -> read('Item.price'));
-		$this -> set('sesNum', $this -> Session -> read('Item.num'));
+		array_push($cartitemlist, array(
+				'sesName' => $this -> Session -> read('Item.name'),
+				'sesImg' => $this -> Session -> read('Item.img'),
+				'sesNum' => $this -> Session -> read('Item.num'),
+				'sesPrice' => $this -> Session -> read('Item.price')
+		));
+
+		//$this->Session->destroy();
+
+		$_SESSION['cartitemlist'] = $cartitemlist;
+		//$_SESSION['cartitemlist'] = "";
+
+		pr($this->Session->read('cartitemlist'));
+		$this -> set('cartitemlist', $cartitemlist);
 
 		// POST送信された場合
 		if($this -> request -> is('post')) {
 			// sesCategoryidを削除する
 			$this -> Session -> delete('sesCategoryid');
+		}
+	}
+
+	public function delete($id) {
+		if($this -> request -> is('post')) {
+			$this -> Flash -> success(__('this cart was cleared'));
+			$this -> Session -> delete('sesName');
+			$this -> Session -> delete('sesImg');
+			$this -> Session -> delete('sesPrice');
+			$this -> Session -> delete('sesNum');
+			return $this -> redirect(array('action' => 'cart'));
 		}
 	}
 
