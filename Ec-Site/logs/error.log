@@ -34760,3 +34760,357 @@ Stack Trace:
 #3 {main}
 
 
+2016-05-18 03:00:58 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 03:00:58 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 04:54:28 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 04:54:29 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 04:54:33 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 04:54:33 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:49:46 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:49:47 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:49:53 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/buykakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:49:54 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/buykakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:49:57 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 213]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-18 05:49:58 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Ec-Site/ecsite/itembuy
+Referer URL: http://localhost/Ec-Site/ecsite/buykakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\Users\\arigak...', 213)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-05-18 05:50:41 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 208]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-18 05:50:42 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Ec-Site/ecsite/itembuy
+Referer URL: http://localhost/Ec-Site/ecsite/buykakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\Users\\arigak...', 208)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-05-18 05:51:08 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:51:09 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:51:47 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:51:48 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:52:53 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:52:54 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:54:12 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:54:13 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:55:54 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 05:55:55 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

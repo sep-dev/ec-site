@@ -1,8 +1,14 @@
 【ご注文内容】
+<?php $sum = 0;?>
+<?php foreach ($cartitemlist as $cartitem): ?>
 
-・○○○○ ←商品名		○○点  ←商品数	○○円  ←商品計
+・<?=h($cartitem['name'])?>		<?= h($cartitem['num']) ?>点	<?= number_format(h($cartitem['num'] * $cartitem['price'])) ?>円
+<?php  $sum += ($cartitem['num'] * $cartitem['price'])?>
 
-									  合計○○○円  ←合計
+<?php endforeach;?>
+
+合計金額:<?= number_format($sum) ?>円
+
 
 以上の商品ご購入ありがとうございます。
 

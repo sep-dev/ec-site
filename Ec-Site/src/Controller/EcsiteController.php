@@ -153,8 +153,7 @@ class EcsiteController extends AppController {
 
 	/**
 	 * Shohindata method
-	 * @param unknown $id
-	 */
+	 * @param unknown $id */
 	public function shohindata($id = null) {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
@@ -200,12 +199,24 @@ class EcsiteController extends AppController {
 	}
 
 	public function itembuy(){
+		$cartitemlist = $this -> Session -> read('cartitemlist');
+		//*登録されたクライントのDBのID取得
+		$result = $this->Session->read('result');
+		//取得したIDからDBのデータを参照
+		$clientdata = $this->tblClient->find()
+					->where(array('clientId'=>$result->clientId));
+		foreach ($clientdata as $clientdata):
+
+		//mail送信
 		$emailObj = new \Cake\Network\Email\Email();
 		$emailObj->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('kakuninmail')
-				->to('hashimotoakinari@se-project.co.jp')
+				->to($clientdata['clientMailAddress'])
 				->subject('購入詳細情報')
 				->send();
+
+		endforeach;
+// 				->viewVars(['cartitemlist'=>$cartitemlist])
 	}
 }
