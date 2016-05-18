@@ -232,6 +232,7 @@ class EcsiteController extends AppController {
 		$clientMail->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('clientmail')
+				->viewVars($adddata)
 				->to($clientdata['clientMailAddress'])
 				->subject('購入詳細情報')
 				->send();

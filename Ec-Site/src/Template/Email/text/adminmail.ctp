@@ -24,7 +24,7 @@
 
 性別:	<?= $clientSex ?>
 
-<?php if (isset($clientdata['clientBirthday'])) { ?>
+<?php if ($clientBirthday != NULL) { ?>
 生年月日:	<?= $clientBirthday ?>
 
 <?php }; ?>
