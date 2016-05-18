@@ -103,42 +103,67 @@ class EcsiteController extends AppController {
 		// Sessionの読み込み
 		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 
+		// 配列cartitemlistが空でなければ、Sessionを読み込む
 		$cartitemlist = array();
 		if(count($this -> Session -> read('cartitemlist')) != 0 ) {
 			$cartitemlist = $this -> Session -> read('cartitemlist');
 		}
 
-		if($this -> Session -> read('Item.id') != "") {
-			array_push($cartitemlist, array(
-					'sesId' => $this -> Session -> read('Item.id'),
-					'sesName' => $this -> Session -> read('Item.name'),
-					'sesImg' => $this -> Session -> read('Item.img'),
-					'sesNum' => $this -> Session -> read('Item.num'),
-					'sesPrice' => $this -> Session -> read('Item.price')
-			));
-			$this -> Session -> delete('Item.id');
-			$this -> Session -> delete('Item.name');
-			$this -> Session -> delete('Item.img');
-			$this -> Session -> delete('Item.num');
-			$this -> Session -> delete('Item.price');
+		$pushFlg = false;
+
+		for($i = 0; $i < count($this -> Session -> read('cartitemlist')); $i++) {
+			if($cartitemlist[$i]['id'] == $this -> Session -> read('Item.id')) {
+				$cartitemlist[$i]['num'] += $this -> Session -> read('Item.num');
+				$pushFlg = true;
+			}
 		}
 
-		$_SESSION['cartitemlist'] = $cartitemlist;
+		if(!$pushFlg){
+			if($this -> Session -> read('Item.id') != "") {
+			array_push($cartitemlist, array(
+					'id' => $this -> Session -> read('Item.id'),
+					'name' => $this -> Session -> read('Item.name'),
+					'img' => $this -> Session -> read('Item.img'),
+					'num' => $this -> Session -> read('Item.num'),
+					'price' => $this -> Session -> read('Item.price')
+			));
+			}
+		}
 
-		pr($this->Session->read('cartitemlist'));
+		$this -> Session -> delete('Item.id');
+		$this -> Session -> delete('Item.name');
+		$this -> Session -> delete('Item.img');
+		$this -> Session -> delete('Item.num');
+		$this -> Session -> delete('Item.price');
+
+		$_SESSION['cartitemlist'] = $cartitemlist;
+		pr($cartitemlist);
+// 		pr(array_keys($cartitemlist));
+// 		pr($this->Session->read('cartitemlist'));
 		$this -> set('cartitemlist', $cartitemlist);
 	}
 
+	/**
+	 * Delete method
+	 * @param unknown $id
+	 */
 	public function delete($id = null) {
 
 		$cartitemlist = $this -> Session -> read('cartitemlist');
-		unset($cartitemlist[0]);
-		if(($key = array_search(array_search($id, $cartitemlist))) !== false) {
-			unset($cartitemlist[$key]);
+		$newitemlist = array();
+
+		foreach ($cartitemlist as $cartitem) {
+			if ($cartitem['id'] != $id){
+				array_push($newitemlist, $cartitem);
+			}
 		}
+		$_SESSION['cartitemlist'] = $newitemlist;
 		return $this -> redirect(array('action' => 'cart'));
 	}
 
+	/**
+	 * Alldelete method
+	 */
 	public function alldelete() {
 		$this -> Session -> delete('cartitemlist');
 		return $this -> redirect(array('action' => 'cart'));
