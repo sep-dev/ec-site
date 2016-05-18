@@ -175,17 +175,17 @@ return [
             'username' => 'arigakoyo',
             'password' => 'f8SKMvH1',
             'client' => null,
-            'tls' => null,
+            'tls' => null
         ],
     'sakura' => [
-    		'className' => 'smtp',
+    		'className' => 'Smtp',
     		'host' => 'se-project.sakura.ne.jp',
     		'port' => 587,
     		'timeout' => 30,
     		'username' => 'arigakoyo@se-project.sakura.ne.jp',
     		'password' => 'f8SKMvH1',
-    		'tls' => true,
-    ],
+    		'tls' => true
+  	  ]
     ],
 
     /**
@@ -197,14 +197,6 @@ return [
      * easier. Each profile accepts a number of keys. See `Cake\Network\Email\Email`
      * for more information.
      */
-    'Email' => [
-        'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
-            //'charset' => 'utf-8',
-            //'headerCharset' => 'utf-8',
-        ],
-    ],
 
     /**
      * Connection information used by the ORM to connect

@@ -34187,3 +34187,576 @@ Stack Trace:
 #3 {main}
 
 
+2016-05-18 00:56:32 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 00:56:32 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 00:56:39 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/buykakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 00:56:40 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/buykakunin
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 00:56:52 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(208): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 00:58:48 Error: [InvalidArgumentException] Unknown email configuration "sakura".
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1271): Cake\Mailer\Email->_applyConfig('sakura')
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(351): Cake\Mailer\Email->profile('sakura')
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(203): Cake\Mailer\Email->__construct('sakura')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:00:25 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(208): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:00:57 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(208): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:02:10 Error: [InvalidArgumentException] Unknown email configuration "sakura".
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1271): Cake\Mailer\Email->_applyConfig('sakura')
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(351): Cake\Mailer\Email->profile('sakura')
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(203): Cake\Mailer\Email->__construct('sakura')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:02:53 Error: Fatal Error (1): Class 'App\Controller\EmailTransport' not found in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 203]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-18 01:02:55 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\EmailTransport' not found
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\Users\\arigak...', 203)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-05-18 01:03:42 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(208): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:06:30 Error: [InvalidArgumentException] Unknown email configuration "sakura".
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1271): Cake\Mailer\Email->_applyConfig('sakura')
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(351): Cake\Mailer\Email->profile('sakura')
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(203): Cake\Mailer\Email->__construct('sakura')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:13:55 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:14:09 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:19:10 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1303): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(207): Cake\Mailer\Email->send('\xE3\x82\x88\xE3\x81\x89')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:20:36 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1303): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(207): Cake\Mailer\Email->send('\xE3\x82\x88\xE3\x81\x89')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:22:17 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1303): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(207): Cake\Mailer\Email->send('\xE3\x82\x88\xE3\x81\x89')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:22:25 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1303): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(207): Cake\Mailer\Email->send('\xE3\x82\x88\xE3\x81\x89')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:24:14 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1303): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(207): Cake\Mailer\Email->send('\xE3\x82\x88\xE3\x81\x89')
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:28:45 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:29:14 Error: Fatal Error (1): Call to undefined method Cake\Mailer\Email::EmailTransport() in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 204]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-18 01:29:15 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\Mailer\Email::EmailTransport()
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\Users\\arigak...', 204)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-05-18 01:29:26 Error: Fatal Error (1): Call to undefined method Cake\Mailer\Email::EmailTransport() in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 204]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-18 01:29:27 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\Mailer\Email::EmailTransport()
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\Users\\arigak...', 204)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-05-18 01:29:39 Error: Fatal Error (1): Call to undefined method Cake\Mailer\Email::EmailTransport() in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 204]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-18 01:29:40 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\Mailer\Email::EmailTransport()
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\Users\\arigak...', 204)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-05-18 01:39:54 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:40:07 Error: [BadMethodCallException] From is not specified.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(208): Cake\Mailer\Email->send()
+#1 [internal function]: App\Controller\EcsiteController->itembuy()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-05-18 01:41:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:48:12 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:48:59 Error: [InvalidArgumentException] Invalid email: "ありがちゃん"
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(602): Cake\Mailer\Email->_validateEmail('\xE3\x81\x82\xE3\x82\x8A\xE3\x81\x8C\xE3\x81\xA1\xE3\x82\x83...')
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(654): Cake\Mailer\Email->_setEmail('_from', '\xE3\x81\x82\xE3\x82\x8A\xE3\x81\x8C\xE3\x81\xA1\xE3\x82\x83...', NULL)
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(382): Cake\Mailer\Email->_setEmailSingle('_from', '\xE3\x81\x82\xE3\x82\x8A\xE3\x81\x8C\xE3\x81\xA1\xE3\x82\x83...', NULL, 'From requires o...')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(205): Cake\Mailer\Email->from('\xE3\x81\x82\xE3\x82\x8A\xE3\x81\x8C\xE3\x81\xA1\xE3\x82\x83...')
+#4 [internal function]: App\Controller\EcsiteController->itembuy()
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2016-05-18 01:49:13 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 01:49:23 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1303): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(208): Cake\Mailer\Email->send()
+#3 [internal function]: App\Controller\EcsiteController->itembuy()
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-05-18 01:50:36 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 01:50:37 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 01:58:57 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\text\kakunin_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\text\\kakunin_mail.ctp',
+)
+Request URL: /Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1845): Cake\View\View->render()
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1714): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Mailer\Email.php(1295): Cake\Mailer\Email->_render(Array)
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(209): Cake\Mailer\Email->send()
+#5 [internal function]: App\Controller\EcsiteController->itembuy()
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-05-18 02:03:33 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-18 02:03:33 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/Ec-Site/ecsite/itembuy
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

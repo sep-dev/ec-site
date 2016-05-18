@@ -10,6 +10,7 @@ use App\Model\Table\TblclientTable;
 use Cake\Validation\Validator;
 use PhpParser\Node\Stmt\ElseIf_;
 use Cake\Test\Fixture\ThingsFixture;
+use Cake\Network\Email\Email;
 
 class EcsiteController extends AppController {
 
@@ -199,6 +200,12 @@ class EcsiteController extends AppController {
 	}
 
 	public function itembuy(){
-
+		$emailObj = new \Cake\Network\Email\Email();
+		$emailObj->transport('sakura')
+				->from('arigakoyo@se-project.sakura.ne.jp')
+				->template('kakuninmail')
+				->to('hashimotoakinari@se-project.co.jp')
+				->subject('購入詳細情報')
+				->send();
 	}
 }
