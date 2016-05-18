@@ -99,7 +99,8 @@ class EcsiteController extends AppController {
 	 */
 	public function cart() {
 		// SelectBoxの値をSessionへ書き込む
-		$this -> Session -> write('Item.num', $this -> request -> data('num'));
+		$this -> Session -> write('Item.num', $this -> request -> data('select'));
+
 		// Sessionの読み込み
 		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 
@@ -113,7 +114,12 @@ class EcsiteController extends AppController {
 
 		for($i = 0; $i < count($this -> Session -> read('cartitemlist')); $i++) {
 			if($cartitemlist[$i]['id'] == $this -> Session -> read('Item.id')) {
-				$cartitemlist[$i]['num'] += $this -> Session -> read('Item.num');
+				if(($cartitemlist[$i]['num'] + $this -> Session -> read('Item.num')) > 5) {
+					$cartitemlist[$i]['num'] = 5;
+				}
+				else {
+					$cartitemlist[$i]['num'] += $this -> Session -> read('Item.num');
+				}
 				$pushFlg = true;
 			}
 		}
@@ -130,6 +136,7 @@ class EcsiteController extends AppController {
 			}
 		}
 
+		pr($cartitemlist);
 		$this -> Session -> delete('Item.id');
 		$this -> Session -> delete('Item.name');
 		$this -> Session -> delete('Item.img');
@@ -137,9 +144,6 @@ class EcsiteController extends AppController {
 		$this -> Session -> delete('Item.price');
 
 		$_SESSION['cartitemlist'] = $cartitemlist;
-		pr($cartitemlist);
-// 		pr(array_keys($cartitemlist));
-// 		pr($this->Session->read('cartitemlist'));
 		$this -> set('cartitemlist', $cartitemlist);
 	}
 
@@ -169,4 +173,7 @@ class EcsiteController extends AppController {
 		return $this -> redirect(array('action' => 'cart'));
 	}
 
+	public function recal() {
+		return $this -> redirect(array('action' => 'cart'));
+	}
 }

@@ -15,7 +15,7 @@
 				array_push($selectnum, array(
 						'value' => $num, 'text' => $num));
 			} ?>
-		<?= $this -> Form -> select('num', $selectnum) ?>
+		<?= $this -> Form -> select('select', $selectnum) ?>
 	</fieldset>
 	<?= $this -> Form -> submit('Cart') ?>
 	<?= $this -> Form -> end() ?>
