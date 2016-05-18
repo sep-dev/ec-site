@@ -207,12 +207,41 @@ class EcsiteController extends AppController {
 					->where(array('clientId'=>$result->clientId));
 		foreach ($clientdata as $clientdata):
 
+		$adddata = array(
+				'clientName'		=>	$clientdata['clientName'],
+
+				'clientPostCode'	=>	$clientdata['clientPostCode'],
+
+				'clientAdd' 		=>	$clientdata['clientAdd'],
+
+				'clientTel'			=>	$clientdata['clientTel'],
+
+				'clientMailAddress'	=>	$clientdata['clientMailAddress'],
+
+				'clientSex' 		=>	$clientdata['clientSex'],
+
+				'clientKana' 		=>	$clientdata['clientKana'],
+
+				'clientBirthday'	=>  $clientdata['clientBirthday']
+		);
+
+
+
 		//mail送信
-		$emailObj = new \Cake\Network\Email\Email();
-		$emailObj->transport('sakura')
+		$clientMail = new \Cake\Network\Email\Email();
+		$clientMail->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
-				->template('kakuninmail')
+				->template('clientmail')
 				->to($clientdata['clientMailAddress'])
+				->subject('購入詳細情報')
+				->send();
+
+		$adminMail = new \Cake\Network\Email\Email();
+		$adminMail->transport('sakura')
+				->from('arigakoyo@se-project.sakura.ne.jp')
+				->template('adminmail')
+				->viewVars($adddata)
+				->to('izumi@se-project.sakura.ne.jp')
 				->subject('購入詳細情報')
 				->send();
 
