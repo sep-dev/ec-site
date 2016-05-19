@@ -272,7 +272,7 @@ class EcsiteController extends AppController {
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('adminmail')
 				->viewVars(array('adddata'=>$adddata,'item'=>$cartitemlist))
-				->to('hashimotoakinari@se-project.co.jp')
+				->to('izumi@se-project.co.jp')
 				->subject('購入詳細情報')
 				->send();
 		endforeach;
