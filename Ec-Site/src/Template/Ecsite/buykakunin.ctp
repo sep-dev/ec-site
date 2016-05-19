@@ -22,15 +22,23 @@
 		  			    <th>数量</th>
 		  			    <th>小計</th>
 					</tr>
+					<?php $sum = 0; ?>
 					<?php foreach ($itemlist as $itemlist):?>
 					<tr>
-						<td class="cart_name" align="center">商品名<?=h($itemlist['name'])?></td>
-						<td class="item" align="center">価格<?=h($itemlist['price'])?></td>
-						<td class="item" align="center">数量<?=h($itemlist['num'])?></td>
-						<td  class="subtotal" align="center">小計
-											<?=number_format(h($itemlist['num'] * $itemlist['price']))?></td>
+						<td class="cart_name" align="center"><?=h($itemlist['name'])?></td>
+						<td class="item" align="center">&yen;<?= number_format(h($itemlist['price']))?></td>
+						<td class="item" align="center"><?=h($itemlist['num'])?></td>
+						<td  class="subtotal" align="center">
+											&yen;<?=number_format(h($itemlist['num'] * $itemlist['price']))?></td>
+						<?php $sum += $itemlist['num'] * $itemlist['price'] ?>
 					</tr>
 					<?php endforeach;?>
+					<tr align="center">
+						<td></td>
+						<td></td>
+						<td>小計</td>
+						<td>&yen;<?= number_format($sum); ?></td>
+					</tr>
 				</table>
 				<br>
 				<div align="center">
