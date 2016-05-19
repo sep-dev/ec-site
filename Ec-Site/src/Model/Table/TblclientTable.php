@@ -83,7 +83,7 @@ class TblclientTable extends table
         $validator
             ->requirePresence('clientAdd', 'create')
             ->add('clientAdd','validFormat',array(
-            		'rule'=>array('custom','/^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９ー\-\n\r]+$/u'),
+            		'rule'=>array('custom','/^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９ー\-\－\n\r]+$/u'),
             		'message' => '住所が不正です！！'
             ))
             ->notEmpty('clientAdd');
