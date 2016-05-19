@@ -26,9 +26,9 @@
 					<tr>
 						<td class="cart_name" align="center">商品名<?=h($itemlist['name'])?></td>
 						<td class="item" align="center">価格<?=h($itemlist['price'])?></td>
-						<td class="item" align="center">数量<?=h($itemlsit['num'])?></td>
+						<td class="item" align="center">数量<?=h($itemlist['num'])?></td>
 						<td  class="subtotal" align="center">小計
-											<?=number_format(h($cartitem['num'] * $cartitem['price']))?></td>
+											<?=number_format(h($itemlist['num'] * $itemlist['price']))?></td>
 					</tr>
 					<?php endforeach;?>
 				</table>
