@@ -175,10 +175,9 @@ return array(
             'username' => 'arigakoyo',
             'password' => 'f8SKMvH1',
             'client' => null,
-<<<<<<< HEAD
             'tls' => null
-        ],
-    'sakura' => [
+        ),
+    'sakura' => array(
     		'className' => 'Smtp',
     		'host' => 'se-project.sakura.ne.jp',
     		'port' => 587,
@@ -186,13 +185,8 @@ return array(
     		'username' => 'arigakoyo@se-project.sakura.ne.jp',
     		'password' => 'f8SKMvH1',
     		'tls' => true
-  	  ]
-    ],
-=======
-            'tls' => null,
-        ),
+  	  )
     ),
->>>>>>> develop/20160531
 
     /**
      * Email delivery profiles
@@ -203,8 +197,6 @@ return array(
      * easier. Each profile accepts a number of keys. See `Cake\Network\Email\Email`
      * for more information.
      */
-<<<<<<< HEAD
-=======
     'Email' => array(
         'default' => array(
             'transport' => 'default',
@@ -213,7 +205,6 @@ return array(
             //'headerCharset' => 'utf-8',
         ),
     ),
->>>>>>> develop/20160531
 
     /**
      * Connection information used by the ORM to connect

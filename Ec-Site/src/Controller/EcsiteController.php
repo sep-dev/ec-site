@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
-<<<<<<< HEAD
 use Cake\Validation\Validation;
 use App\Model\Entity\Tblclient;
 use App\Model\Table\TblclientTable;
@@ -12,8 +11,6 @@ use Cake\Validation\Validator;
 use PhpParser\Node\Stmt\ElseIf_;
 use Cake\Test\Fixture\ThingsFixture;
 use Cake\Network\Email\Email;
-=======
->>>>>>> develop/20160531
 
 class EcsiteController extends AppController {
 
@@ -40,12 +37,8 @@ class EcsiteController extends AppController {
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 	}
-
-<<<<<<< HEAD
-=======
 	public function inputdata() {
 
->>>>>>> develop/20160531
 		//postデータが有るかの判断
 		if($this->request->is('post')&&isset($this->request->data['clientName1'])) {
 				//メールアドレスが確認用と同じかを判断
@@ -100,10 +93,7 @@ class EcsiteController extends AppController {
 	}
 
 	public function inputkakunin() {
-<<<<<<< HEAD
-		//お客様情報をセッションから参照しViewにset
-=======
->>>>>>> develop/20160531
+		//お客様情報をセッシ
 		$this->set('adddata',$this->Session->read('clientdata'));
 
 		//お客様情報をDBに保存

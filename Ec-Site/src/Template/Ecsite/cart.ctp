@@ -1,5 +1,4 @@
 <div>
-<<<<<<< HEAD
 	<!-- カート一覧ここから↓ -->
 	<table width="800" border="1" cellspacing="0" cellpadding="0">
 		<caption><font size="5">ショッピングカート商品一覧</font></caption>
@@ -39,8 +38,6 @@
 	<!-- カート一覧ここまで↑ -->
 	<?= $this->Form->button('買い物を続ける') ?>
 	<?= $this->Form->button('購入手続きに進む')?>
-=======
->>>>>>> develop/20160531
 	<h3>Cart</h3>
 	<?php if(count($cartitemlist) != 0): ?>
 	<?= $this -> Form -> postlink('カートを空にする', array(
@@ -78,13 +75,10 @@
 		<h3>Not Data.</h3>
 	<?php endif; ?>
 	<!-- 続ける場合は、配列にセッション情報を格納 -->
-<<<<<<< HEAD
 	<?= $this -> Html -> link('続ける', array(
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
-=======
 	<p><?= $this -> Html -> link('買い物を続ける', array(
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?></p>
 	<p><?= $this -> Html -> link('購入する', array(
 			'controller' => 'ecsite', 'action' => 'inputdata')) ?></p>
->>>>>>> develop/20160531
 </div>
