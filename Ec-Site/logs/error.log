@@ -13707,3 +13707,75 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-05-19 02:02:12 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed
+Request URL: /ec-site/Ec-Site/ecsite/cart
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/shohindata/25
+Stack Trace:
+#0 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(92): PDO->prepare('SELECT name FRO...')
+#1 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(283): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(241): Cake\Database\Connection->query('SELECT name FRO...')
+#4 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(41): Cake\Database\Schema\Collection->listTables()
+#6 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(44): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(282): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(201): Cake\ORM\Table->__construct(Array)
+#9 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(169): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(109): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Routing\Filter\DebugBarFilter.php(186): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventManager.php(389): DebugKit\Routing\Filter\DebugBarFilter->afterDispatch(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(92): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.afte...', Array)
+#16 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-05-19 02:02:38 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed
+Request URL: /ec-site/Ec-Site/ecsite/cart
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/shohindata/25
+Stack Trace:
+#0 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(92): PDO->prepare('SELECT name FRO...')
+#1 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(283): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(241): Cake\Database\Connection->query('SELECT name FRO...')
+#4 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(41): Cake\Database\Schema\Collection->listTables()
+#6 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(44): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(282): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(201): Cake\ORM\Table->__construct(Array)
+#9 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(169): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(109): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Routing\Filter\DebugBarFilter.php(186): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventManager.php(389): DebugKit\Routing\Filter\DebugBarFilter->afterDispatch(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(92): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.afte...', Array)
+#16 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-05-19 02:02:57 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed
+Request URL: /ec-site/Ec-Site/ecsite/cart
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/shohindata/25
+Stack Trace:
+#0 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(92): PDO->prepare('SELECT name FRO...')
+#1 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(283): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(241): Cake\Database\Connection->query('SELECT name FRO...')
+#4 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(41): Cake\Database\Schema\Collection->listTables()
+#6 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(44): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(282): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(201): Cake\ORM\Table->__construct(Array)
+#9 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(169): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(109): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\debug_kit\src\Routing\Filter\DebugBarFilter.php(186): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventManager.php(389): DebugKit\Routing\Filter\DebugBarFilter->afterDispatch(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(92): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.afte...', Array)
+#16 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
