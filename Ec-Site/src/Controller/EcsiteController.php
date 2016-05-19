@@ -4,13 +4,18 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
-use Cake\Validation\Validation;
-use App\Model\Entity\Tblclient;
-use App\Model\Table\TblclientTable;
-use Cake\Validation\Validator;
-use PhpParser\Node\Stmt\ElseIf_;
 
 class EcsiteController extends AppController {
+
+	public $paginate = array(
+			'limit' => 5
+	);
+
+	public $helpers = array(
+			'Paginator' => array(
+					'templates' => 'paginator-templates'
+			)
+	);
 
 	public function initialize() {
  		parent::initialize();
@@ -76,7 +81,6 @@ class EcsiteController extends AppController {
 	}
 
 	public function inputkakunin() {
-
 		$this->set('adddata',$this->Session->read('clientdata'));
 
 		if($this->request->is('post')) {
@@ -88,23 +92,11 @@ class EcsiteController extends AppController {
 		}
 	}
 
-	public $paginate = array(
-			'limit' => 5
-	);
-
-	public $helpers = array(
-			'Paginator' => array(
-					'templates' => 'paginator-templates'
-			)
-	);
-
 	/**
 	 * Initialize method
 	 * {@inheritDoc}
 	 * @see \App\Controller\AppController::initialize()
 	 */
-
-
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 	}
