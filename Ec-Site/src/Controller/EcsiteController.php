@@ -240,7 +240,7 @@ class EcsiteController extends AppController {
 		$clientMail->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('clientmail')
-				->viewVars($adddata,$cartitemlist)
+				->viewVars(array('adddata'=>$adddata,'item'=>$cartitemlist))
 				->to($clientdata['clientMailAddress'])
 				->subject('購入詳細情報')
 				->send();
@@ -249,8 +249,8 @@ class EcsiteController extends AppController {
 		$adminMail->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('adminmail')
-				->viewVars($adddata,$cartitemlist)
-				->to('izumi@se-project.sakura.ne.jp')
+				->viewVars(array('adddata'=>$adddata,'item'=>$cartitemlist))
+				->to('izumi@se-project.co.jp')
 				->subject('購入詳細情報')
 				->send();
 		endforeach;
