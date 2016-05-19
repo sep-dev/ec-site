@@ -22,12 +22,15 @@
 		  			    <th>数量</th>
 		  			    <th>小計</th>
 					</tr>
+					<?php foreach ($itemlist as $itemlist):?>
 					<tr>
-						<td class="cart_name" align="center">商品名</td>
-						<td class="item" align="center">価格</td>
-						<td class="item" align="center">数量</td>
-						<td  class="subtotal" align="center">小計</td>
+						<td class="cart_name" align="center">商品名<?=h($itemlist['name'])?></td>
+						<td class="item" align="center">価格<?=h($itemlist['price'])?></td>
+						<td class="item" align="center">数量<?=h($itemlsit['num'])?></td>
+						<td  class="subtotal" align="center">小計
+											<?=number_format(h($cartitem['num'] * $cartitem['price']))?></td>
 					</tr>
+					<?php endforeach;?>
 				</table>
 				<br>
 				<div align="center">

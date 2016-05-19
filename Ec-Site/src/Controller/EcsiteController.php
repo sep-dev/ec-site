@@ -196,6 +196,9 @@ class EcsiteController extends AppController {
 
 
 	public function buykakunin(){
+
+		$this->set('itemlist',$this->Session ->read('cartitemlist'));
+
 		//登録したデータのDBのIDを取得
 		$result = $this->Session->read('result');
 		//登録したデータの取得
@@ -205,8 +208,9 @@ class EcsiteController extends AppController {
 	}
 
 	public function itembuy(){
+		//購入したアイテム情報の取得
 		$cartitemlist = $this -> Session -> read('cartitemlist');
-		//*登録されたクライントのDBのID取得
+		//登録されたクライントのDBのID取得
 		$result = $this->Session->read('result');
 		//取得したIDからDBのデータを参照
 		$clientdata = $this->tblClient->find()
@@ -231,15 +235,12 @@ class EcsiteController extends AppController {
 
 				'clientBirthday'	=>  $clientdata['clientBirthday']
 		);
-
-
-
 		//お客様にmail送信
 		$clientMail = new \Cake\Network\Email\Email();
 		$clientMail->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('clientmail')
-				->viewVars($adddata)
+				->viewVars($adddata,$cartitemlist)
 				->to($clientdata['clientMailAddress'])
 				->subject('購入詳細情報')
 				->send();
@@ -248,11 +249,13 @@ class EcsiteController extends AppController {
 		$adminMail->transport('sakura')
 				->from('arigakoyo@se-project.sakura.ne.jp')
 				->template('adminmail')
-				->viewVars($adddata)
+				->viewVars($adddata,$cartitemlist)
 				->to('izumi@se-project.sakura.ne.jp')
 				->subject('購入詳細情報')
 				->send();
-
 		endforeach;
+
+		$this->Session->destroy();
+
 	}
 }
