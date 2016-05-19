@@ -1,0 +1,21 @@
+<div>
+	<h3>商品一覧</h3>
+	<?= $this -> Form -> create() ?>
+	<table>
+		<thead>
+			<tr>
+				<th>CategoryID</th>
+				<th>CategoryName</th>
+			<tr>
+		<thead>
+		<tbody>
+
+		<?php foreach ($tblcategorys as $tblcategory): ?>
+			<tr>
+				<td></td>
+				<td></td>
+			<tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>

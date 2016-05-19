@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Controler;
+
+use App\Controler\AppController;
+
+class Ec-siteController extends AppController {
+
+	public function shohin_list() {
+		echo "hell";
+	}
+
+}
