@@ -96,11 +96,11 @@ class Validator implements ArrayAccess, IteratorAggregate, Countable
         $errors = [];
 
         $requiredMessage = 'This field is required';
-        $emptyMessage = 'This field cannot be left empty';
+        $emptyMessage = '入力されていません！！';
 
         if ($this->_useI18n) {
             $requiredMessage = __d('cake', 'This field is required');
-            $emptyMessage = __d('cake', 'This field cannot be left empty');
+            $emptyMessage = __d('cake', '入力されていません！！');
         }
 
         foreach ($this->_fields as $name => $field) {
