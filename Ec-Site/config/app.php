@@ -331,5 +331,8 @@ return array(
      */
     'Session' => array(
         'defaults' => 'php',
+    		'ini' => array(
+    				'session.cookie_lifetime' => 3600
+    		)
     ),
 );
