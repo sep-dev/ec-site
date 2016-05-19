@@ -31678,3 +31678,17 @@ Stack Trace:
 #3 {main}
 
 
+2016-05-19 02:00:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/cart
+Stack Trace:
+#0 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
