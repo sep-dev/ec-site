@@ -2,7 +2,8 @@
 	<h3>Cart</h3>
 	<?php if(count($cartitemlist) != 0): ?>
 	<?= $this -> Form -> postlink('カートを空にする', array(
-			'controller' => 'ecsite', 'action' => 'cartempty')) ?>
+			'controller' => 'ecsite', 'action' => 'cartempty'), array(
+					'confirm' => 'Are you sure?')) ?>
 		<table>
 			<thead>
 				<tr>
