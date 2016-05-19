@@ -7,16 +7,6 @@ use Cake\ORM\TableRegistry;
 
 class EcsiteController extends AppController {
 
-	public function initialize() {
- 		parent::initialize();
-		$this->Session = $this->request->session();
-		$this -> loadComponent('Paginator');
-		// 参照テーブルを設定
-		$this -> tblItem = TableRegistry::get('tblitem');
-		$this -> tblCategory = TableRegistry::get('tblcategory');
-		$this-> tblClient = TableRegistry::get('tblclient');
-	}
-
 	public $paginate = array(
 			'limit' => 5
 	);
@@ -26,6 +16,16 @@ class EcsiteController extends AppController {
 					'templates' => 'paginator-templates'
 			)
 	);
+
+	public function initialize() {
+		parent::initialize();
+		$this->Session = $this->request->session();
+		$this -> loadComponent('Paginator');
+		// 参照テーブルを設定
+		$this -> tblItem = TableRegistry::get('tblitem');
+		$this -> tblCategory = TableRegistry::get('tblcategory');
+		$this-> tblClient = TableRegistry::get('tblclient');
+	}
 
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));

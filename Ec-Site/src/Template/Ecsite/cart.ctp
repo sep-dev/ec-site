@@ -36,4 +36,8 @@
 		<h3>Not Data.</h3>
 	<?php endif; ?>
 	<!-- 続ける場合は、配列にセッション情報を格納 -->
+	<p><?= $this -> Html -> link('買い物を続ける', array(
+			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?></p>
+	<p><?= $this -> Html -> link('購入する', array(
+			'controller' => 'ecsite', 'action' => 'inputdata')) ?></p>
 </div>
