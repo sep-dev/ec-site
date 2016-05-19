@@ -172,11 +172,20 @@ return array(
             'host' => 'localhost',
             'port' => 25,
             'timeout' => 30,
-            'username' => 'user',
-            'password' => 'secret',
+            'username' => 'arigakoyo',
+            'password' => 'f8SKMvH1',
             'client' => null,
-            'tls' => null,
+            'tls' => null
         ),
+    'sakura' => array(
+    		'className' => 'Smtp',
+    		'host' => 'se-project.sakura.ne.jp',
+    		'port' => 587,
+    		'timeout' => 30,
+    		'username' => 'arigakoyo@se-project.sakura.ne.jp',
+    		'password' => 'f8SKMvH1',
+    		'tls' => true
+  	  )
     ),
 
     /**
@@ -216,7 +225,7 @@ return array(
              */
             //'port' => 'nonstandard_port_number',
             'username' => 'root',
-            'password' => 'test',
+            'password' => 'f8SKMvH1',
             'database' => 'ec_site',
             'encoding' => 'utf8',
             'timezone' => 'UTC',

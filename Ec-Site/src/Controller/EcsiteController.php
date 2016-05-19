@@ -4,6 +4,13 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
+use Cake\Validation\Validation;
+use App\Model\Entity\Tblclient;
+use App\Model\Table\TblclientTable;
+use Cake\Validation\Validator;
+use PhpParser\Node\Stmt\ElseIf_;
+use Cake\Test\Fixture\ThingsFixture;
+use Cake\Network\Email\Email;
 
 class EcsiteController extends AppController {
 
@@ -30,7 +37,6 @@ class EcsiteController extends AppController {
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 	}
-
 	public function inputdata() {
 
 		//postデータが有るかの判断
@@ -66,12 +72,15 @@ class EcsiteController extends AppController {
 												"-".
 												$this->request->data['clientBirthday']
 		 			);
-
+					//入力されたデータをバリデーションチェックするための準備
 					$validate = $this->tblClient->newEntity($adddata);
+					//バリデーションを実行して判断
 					if(!$validate->errors()) {
+						//入力されたデータをセッションに追加
 						$this->Session->write('clientdata',$this->request->data);
 						return $this->redirect(array('action' => 'inputkakunin'));
 					} else {
+						//バリデーションして不適切だった場合のエラー表示
 						$errors = $validate->errors();
 						$this->set('error',$errors);
 					}
@@ -84,12 +93,15 @@ class EcsiteController extends AppController {
 	}
 
 	public function inputkakunin() {
+		//お客様情報をセッシ
 		$this->set('adddata',$this->Session->read('clientdata'));
 
+		//お客様情報をDBに保存
 		if($this->request->is('post')) {
 			$tblclient = $this->tblClient->newEntity();
 			$tblclient = $this->tblClient->patchEntity($tblclient,$this->request->data);
-			if($this->tblClient->save($tblclient)) {
+			if($result=$this->tblClient->save($tblclient)) {
+				$this->Session->write('result',$result);
 				$this->redirect(array('action'=>'buykakunin'));
 			}
 		}
@@ -119,8 +131,7 @@ class EcsiteController extends AppController {
 
 	/**
 	 * Shohindata method
-	 * @param unknown $id
-	 */
+	 * @param unknown $id */
 	public function shohindata($id = null) {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
@@ -203,5 +214,70 @@ class EcsiteController extends AppController {
 		}
 		$_SESSION['cartitemlist'] = $newitemlist;
 		return $this -> redirect(array('action' => 'cart'));
+	}
+
+
+	public function buykakunin(){
+
+		$this->set('itemlist',$this->Session ->read('cartitemlist'));
+
+		//登録したデータのDBのIDを取得
+		$result = $this->Session->read('result');
+		//登録したデータの取得
+		$clientdata = $this->tblClient->find()
+						->where(array('clientId'=>$result->clientId));
+		$this->set('clientdata',$clientdata);
+	}
+
+	public function itembuy(){
+		//購入したアイテム情報の取得
+		$cartitemlist = $this -> Session -> read('cartitemlist');
+		//登録されたクライントのDBのID取得
+		$result = $this->Session->read('result');
+		//取得したIDからDBのデータを参照
+		$clientdata = $this->tblClient->find()
+					->where(array('clientId'=>$result->clientId));
+		foreach ($clientdata as $clientdata):
+
+		//お客様情報を配列に格納
+		$adddata = array(
+				'clientName'		=>	$clientdata['clientName'],
+
+				'clientPostCode'	=>	$clientdata['clientPostCode'],
+
+				'clientAdd' 		=>	$clientdata['clientAdd'],
+
+				'clientTel'			=>	$clientdata['clientTel'],
+
+				'clientMailAddress'	=>	$clientdata['clientMailAddress'],
+
+				'clientSex' 		=>	$clientdata['clientSex'],
+
+				'clientKana' 		=>	$clientdata['clientKana'],
+
+				'clientBirthday'	=>  $clientdata['clientBirthday']
+		);
+		//お客様にmail送信
+		$clientMail = new \Cake\Network\Email\Email();
+		$clientMail->transport('sakura')
+				->from('arigakoyo@se-project.sakura.ne.jp')
+				->template('clientmail')
+				->viewVars(array('adddata'=>$adddata,'item'=>$cartitemlist))
+				->to($clientdata['clientMailAddress'])
+				->subject('購入詳細情報')
+				->send();
+		//管理者にmail送信
+		$adminMail = new \Cake\Network\Email\Email();
+		$adminMail->transport('sakura')
+				->from('arigakoyo@se-project.sakura.ne.jp')
+				->template('adminmail')
+				->viewVars(array('adddata'=>$adddata,'item'=>$cartitemlist))
+				->to('hashimotoakinari@se-project.co.jp')
+				->subject('購入詳細情報')
+				->send();
+		endforeach;
+
+		$this->Session->destroy();
+
 	}
 }
