@@ -1,0 +1,9 @@
+<?php
+
+name-space App\Controler;
+
+use App\Controler\AppController;
+
+class Ec-siteController extends AppController {
+
+}
