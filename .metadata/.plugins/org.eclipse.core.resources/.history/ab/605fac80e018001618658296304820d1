@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Model\Table;
+
+use Cake\ORM\Table;
+
+class tblCategoryTable extends Table {
+
+	public function initialize(array $config) {
+
+		$this -> hasMany('Item',
+				array('className' => 'Item'));
+	}
+
+	/**
+	 * ValidationDefault method
+	 * 未入力のデータがあった場合、保存されないようにする。
+	 * @param validator $validator
+	 */
+	public function validationDefault(validator $validator) {
+		$validator
+		-> notEmpty('title')	// 必須項目
+		-> notEmpty('body');	// 指定
+
+		return $validator;
+	}
+}
+
+?>
