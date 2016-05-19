@@ -136,7 +136,6 @@ class EcsiteController extends AppController {
 			}
 		}
 
-		pr($cartitemlist);
 		$this -> Session -> delete('Item.id');
 		$this -> Session -> delete('Item.name');
 		$this -> Session -> delete('Item.img');
@@ -168,12 +167,8 @@ class EcsiteController extends AppController {
 	/**
 	 * Alldelete method
 	 */
-	public function alldelete() {
+	public function cartempty() {
 		$this -> Session -> delete('cartitemlist');
-		return $this -> redirect(array('action' => 'cart'));
-	}
-
-	public function recal() {
 		return $this -> redirect(array('action' => 'cart'));
 	}
 }
