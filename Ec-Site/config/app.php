@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
     /**
      * Debug Level:
      *
@@ -35,7 +35,7 @@ return [
      *   `plugins`, `templates`, `locales` subkeys, which allow the definition of
      *   paths for plugins, view templates and locale files respectively.
      */
-    'App' => [
+    'App' => array(
         'namespace' => 'App',
         'encoding' => 'UTF-8',
         'base' => false,
@@ -47,12 +47,12 @@ return [
         'imageBaseUrl' => 'img/',
         'cssBaseUrl' => 'css/',
         'jsBaseUrl' => 'js/',
-        'paths' => [
-            'plugins' => [ROOT . DS . 'plugins' . DS],
-            'templates' => [APP . 'Template' . DS],
-            'locales' => [APP . 'Locale' . DS],
-        ],
-    ],
+        'paths' => array(
+            'plugins' => array(ROOT . DS . 'plugins' . DS),
+            'templates' => array(APP . 'Template' . DS),
+            'locales' => array(APP . 'Locale' . DS),
+        ),
+    ),
 
     /**
      * Security and encryption configuration
@@ -61,9 +61,9 @@ return [
      *   The salt value is also used as the encryption key.
      *   You should treat it as extremely sensitive data.
      */
-    'Security' => [
+    'Security' => array(
         'salt' => 'ga;ltyl;lhbsjo3451l;kbl;hgaafajkot5r3u',
-    ],
+    ),
 
     /**
      * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -73,44 +73,44 @@ return [
      * Set to true to apply timestamps when debug is true. Set to 'force' to always
      * enable timestamping regardless of debug value.
      */
-    'Asset' => [
+    'Asset' => array(
         // 'timestamp' => true,
-    ],
+    ),
 
     /**
      * Configure the cache adapters.
      */
-    'Cache' => [
-        'default' => [
+    'Cache' => array(
+        'default' => array(
             'className' => 'File',
             'path' => CACHE,
-        ],
+        ),
 
         /**
          * Configure the cache used for general framework caching.
          * Translation cache files are stored with this configuration.
          */
-        '_cake_core_' => [
+        '_cake_core_' => array(
             'className' => 'File',
             'prefix' => 'myapp_cake_core_',
             'path' => CACHE . 'persistent/',
             'serialize' => true,
             'duration' => '+2 minutes',
-        ],
+        ),
 
         /**
          * Configure the cache for model and datasource caches. This cache
          * configuration is used to store schema descriptions, and table listings
          * in connections.
          */
-        '_cake_model_' => [
+        '_cake_model_' => array(
             'className' => 'File',
             'prefix' => 'myapp_cake_model_',
             'path' => CACHE . 'models/',
             'serialize' => true,
             'duration' => '+2 minutes',
-        ],
-    ],
+        ),
+    ),
 
     /**
      * Configure the Error and Exception handlers used by your application.
@@ -138,13 +138,13 @@ return [
      *   E.g.:
      *   `'skipLog' => ['Cake\Network\Exception\NotFoundException', 'Cake\Network\Exception\UnauthorizedException']`
      */
-    'Error' => [
+    'Error' => array(
         'errorLevel' => E_ALL & ~E_DEPRECATED,
         'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
-        'skipLog' => [],
+        'skipLog' => array(),
         'log' => true,
         'trace' => true,
-    ],
+    ),
 
     /**
      * Email configuration.
@@ -165,8 +165,8 @@ return [
      * appropriate file to src/Mailer/Transport.  Transports should be named
      * 'YourTransport.php', where 'Your' is the name of the transport.
      */
-    'EmailTransport' => [
-        'default' => [
+    'EmailTransport' => array(
+        'default' => array(
             'className' => 'Mail',
             // The following keys are used in SMTP transports
             'host' => 'localhost',
@@ -176,8 +176,8 @@ return [
             'password' => 'secret',
             'client' => null,
             'tls' => null,
-        ],
-    ],
+        ),
+    ),
 
     /**
      * Email delivery profiles
@@ -188,14 +188,14 @@ return [
      * easier. Each profile accepts a number of keys. See `Cake\Network\Email\Email`
      * for more information.
      */
-    'Email' => [
-        'default' => [
+    'Email' => array(
+        'default' => array(
             'transport' => 'default',
             'from' => 'you@localhost',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
-        ],
-    ],
+        ),
+    ),
 
     /**
      * Connection information used by the ORM to connect
@@ -203,8 +203,8 @@ return [
      * Drivers include Mysql Postgres Sqlite Sqlserver
      * See vendor\cakephp\cakephp\src\Database\Driver for complete list
      */
-    'Datasources' => [
-        'default' => [
+    'Datasources' => array(
+        'default' => array(
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
@@ -216,7 +216,7 @@ return [
              */
             //'port' => 'nonstandard_port_number',
             'username' => 'root',
-            'password' => 'f8SKMvH1',
+            'password' => 'test',
             'database' => 'ec_site',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
@@ -241,12 +241,12 @@ return [
              * which is the recommended value in production environments
              */
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
-        ],
+        ),
 
         /**
          * The test connection is used during the test suite.
          */
-        'test' => [
+        'test' => array(
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
@@ -261,26 +261,26 @@ return [
             'quoteIdentifiers' => false,
             'log' => false,
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
-        ],
-    ],
+        ),
+    ),
 
     /**
      * Configures logging options
      */
-    'Log' => [
-        'debug' => [
+    'Log' => array(
+        'debug' => array(
             'className' => 'Cake\Log\Engine\FileLog',
             'path' => LOGS,
             'file' => 'debug',
-            'levels' => ['notice', 'info', 'debug'],
-        ],
-        'error' => [
+            'levels' => array('notice', 'info', 'debug'),
+        ),
+        'error' => array(
             'className' => 'Cake\Log\Engine\FileLog',
             'path' => LOGS,
             'file' => 'error',
-            'levels' => ['warning', 'error', 'critical', 'alert', 'emergency'],
-        ],
-    ],
+            'levels' => array('warning', 'error', 'critical', 'alert', 'emergency'),
+        ),
+    ),
 
     /**
      * Session configuration.
@@ -320,7 +320,7 @@ return [
      *
      * To use database sessions, load the SQL file located at config/Schema/sessions.sql
      */
-    'Session' => [
+    'Session' => array(
         'defaults' => 'php',
-    ],
-];
+    ),
+);

@@ -1,0 +1,24 @@
+<div>
+	<h3><?= h($tblcategory -> categoryName)?> </h3>
+	<!-- 戻るボタン -->
+	<?= $this -> Html -> link('Back', array(
+			'controller' => 'ecsite', 'action' => 'index')) ?>
+
+	<!-- カテゴリ別予想 -->
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Image</th>
+			<th>Data</th>
+			<th>Price</th>
+		</tr>
+		<?php foreach ($tblcategory -> $tblitem as $item): ?>
+		<tr>
+			<td><?= $item -> itemName ?></td>
+			<td><?= $item -> itemImg ?></td>
+			<td><?= $item -> itemData ?></td>
+			<td><?= $item -> itemPrice ?></td>
+		</tr>
+		<?php endforeach; ?>
+	</table>
+</div>

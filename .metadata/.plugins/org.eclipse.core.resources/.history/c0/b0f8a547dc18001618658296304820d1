@@ -1,0 +1,21 @@
+<div>
+	<h3>商品一覧</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>CategoryID</th>
+				<th>CategoryName</th>
+			<tr>
+		<thead>
+		<tbody>
+
+		<?php foreach ($tblcategory as $tblcategory): ?>
+			<tr>
+				<td><?= $this -> Html -> link($tblcategory -> categoryName, array(
+					'controller' => 'Ecsite', 'action' => 'shohinlist', $tblcategory -> categoryId)) ?></td>
+				<td></td>
+			<tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>
