@@ -24,10 +24,10 @@
 					</tr>
 					<?php foreach ($itemlist as $itemlist):?>
 					<tr>
-						<td class="cart_name" align="center">商品名<?=h($itemlist['name'])?></td>
-						<td class="item" align="center">価格<?=h($itemlist['price'])?></td>
-						<td class="item" align="center">数量<?=h($itemlist['num'])?></td>
-						<td  class="subtotal" align="center">小計
+						<td class="cart_name" align="center"><?=h($itemlist['name'])?></td>
+						<td class="item" align="center"><?=h($itemlist['price'])?></td>
+						<td class="item" align="center"><?=h($itemlist['num'])?></td>
+						<td  class="subtotal" align="center">
 											<?=number_format(h($itemlist['num'] * $itemlist['price']))?></td>
 					</tr>
 					<?php endforeach;?>
