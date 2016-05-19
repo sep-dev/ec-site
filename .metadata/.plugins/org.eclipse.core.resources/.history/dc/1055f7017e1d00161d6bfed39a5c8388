@@ -95,6 +95,36 @@ class EcsiteController extends AppController {
 		}
 	}
 
+<<<<<<< HEAD
+	/**
+	 * Initialize method
+	 * {@inheritDoc}
+	 * @see \App\Controller\AppController::initialize()
+	 */
+	public function index() {
+		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
+	}
+
+	/**
+	 * Shohinlist method
+	 * All Data
+	 */
+	public function shohinlist() {
+		$this -> set('tblitem', $this -> paginate($this -> tblItem));
+
+		// POST送信された場合
+		if($this -> request -> is('post')) {
+			$find = $this -> request -> data('find');
+				// 検索フォームが空でない場合
+				if($find != null) {
+				$tblitem = $this -> set('tblitem', $this -> tblItem -> find()
+						-> where(array("concat(itemName, itemData, itemPrice) like " => '%' .$find . '%')));
+			}
+		}
+	}
+
+=======
+>>>>>>> 893f7cd18f9fb310101baa0dab6e5309220203ff
 	/**
 	 * Categorylist method
 	 * By Category
