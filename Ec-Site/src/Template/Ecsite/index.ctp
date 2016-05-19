@@ -8,11 +8,6 @@
 			<tr>
 		<thead>
 		<tbody>
-			<tr>
-				<td>0</td>
-				<td><?= $this -> Html -> link('全リスト', array(
-						'controller' => 'ecsite', 'action' => 'shohinlist')) ?></td>
-			<tr>
 		<?php foreach ($tblcategory as $tblcategory): ?>
 			<tr>
 				<td><?= h($tblcategory -> categoryId) ?></td>
