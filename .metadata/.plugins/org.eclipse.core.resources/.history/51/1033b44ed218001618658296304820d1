@@ -1,0 +1,24 @@
+<div>
+	<h3>Topページ仮想</h3>
+
+<!-- カテゴリ一覧 -->
+	<!-- 甲殻類 -->
+	<?= $this -> Html -> link('甲殻類', array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', 1)) ?>
+	<!-- 魚類 -->
+	<?= $this -> Html -> link('魚類', array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', 2)) ?>
+	<!-- 貝類 -->
+	<?= $this -> Html -> link('貝類', array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', 3)) ?>
+	<!-- イカタコ -->
+	<?= $this -> Html -> link('イカタコ', array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', 4)) ?>
+	<!-- その他 -->
+	<?= $this -> Html -> link('その他', array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', 5)) ?>
+
+	<?php foreach($tblcategory as $tblcategory): ?>
+	<?= $this -> Html -> link($tblcategory -> categoryName, array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', $tblcategory -> categoryId)) ?>
+</div>

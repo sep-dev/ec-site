@@ -1,0 +1,22 @@
+<div>
+	<h3>商品一覧</h3>
+	<?= $this -> Form -> create() ?>
+	<table>
+		<thead>
+			<tr>
+				<th>CategoryID</th>
+				<th>CategoryName</th>
+			<tr>
+		<thead>
+		<tbody>
+
+	<!-- $tblitem配列をループして、商品リストの情報を表示 -->
+
+			<tr>
+				<td><?php echo "aaa"; ?></td>
+				<td></td>
+			<tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>

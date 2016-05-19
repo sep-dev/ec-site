@@ -1,0 +1,10 @@
+<div>
+	<h3>仮想Topページ</h3>
+
+<!-- カテゴリ一覧 -->
+
+	<?php foreach($tblcategory as $tblcategory): ?>
+	<?= $this -> Html -> link($tblcategory -> categoryName, array(
+			'controller' => 'Ecsite', 'action' => 'shohinlist', $tblcategory -> categoryId)) ?>
+	<?php endforeach; ?>
+</div>

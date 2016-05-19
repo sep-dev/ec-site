@@ -1,4 +1,5 @@
 <div>
+<<<<<<< HEAD
 	<!-- カート一覧ここから↓ -->
 	<table width="800" border="1" cellspacing="0" cellpadding="0">
 		<caption><font size="5">ショッピングカート商品一覧</font></caption>
@@ -38,26 +39,52 @@
 	<!-- カート一覧ここまで↑ -->
 	<?= $this->Form->button('買い物を続ける') ?>
 	<?= $this->Form->button('購入手続きに進む')?>
+=======
+>>>>>>> develop/20160531
 	<h3>Cart</h3>
-	<table>
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Image</th>
-				<th>Num</th>
-				<th>Price</th>
-			<tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><?= h($sesName) ?></td>
-				<td><?= $this -> Html -> image('/image/' . $sesImg) ?></td>
-				<td><?= h($sesNum) ?></td>
-				<td>&yen;<?= h($sesNum * $sesPrice) ?></td>
-			<tr>
-		</tbody>
-	</table>
+	<?php if(count($cartitemlist) != 0): ?>
+	<?= $this -> Form -> postlink('カートを空にする', array(
+			'controller' => 'ecsite', 'action' => 'cartempty'), array(
+					'confirm' => 'Are you sure?')) ?>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Image</th>
+					<th>Num</th>
+					<th>Price</th>
+					<th>Action</th>
+				<tr>
+			</thead>
+			<tbody>
+				<?php $sum = 0; ?>
+				<?php foreach($cartitemlist as $cartitem): ?>
+					<tr>
+						<td><?= h($cartitem['name']) ?></td>
+						<td><?= $this -> Html -> image('/image/' .$cartitem['img']) ?></td>
+						<td><?= h($cartitem['num']) ?></td>
+						<td>&yen;<?= number_format(h($cartitem['num'] * $cartitem['price'])) ?></td>
+						<?php $sum += ($cartitem['num'] * $cartitem['price']) ?>
+						<td><?= $this -> Form -> postlink('Delete', array(
+								'controller' => 'ecsite', 'action' => 'delete', $cartitem['id']), array(
+										'confirm' => 'Are you sure?')) ?>
+						</td>
+				<?php endforeach; ?>
+				<?php unset($cartitem); ?>
+			</tbody>
+		</table>
+	<h4>合計金額 : &yen;<?= number_format($sum) ?></h4>
+	<?php else: ?>
+		<h3>Not Data.</h3>
+	<?php endif; ?>
 	<!-- 続ける場合は、配列にセッション情報を格納 -->
+<<<<<<< HEAD
 	<?= $this -> Html -> link('続ける', array(
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
+=======
+	<p><?= $this -> Html -> link('買い物を続ける', array(
+			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?></p>
+	<p><?= $this -> Html -> link('購入する', array(
+			'controller' => 'ecsite', 'action' => 'inputdata')) ?></p>
+>>>>>>> develop/20160531
 </div>

@@ -1,0 +1,29 @@
+<div>
+	<h3>商品一覧</h3>
+	<?= $this -> Form -> create() ?>
+	<table>
+		<thead>
+			<tr>
+				<th>CategoryID</th>
+				<th>CategoryName</th>
+			<tr>
+		<thead>
+		<tbody>
+
+	<!-- $tblitem配列をループして、商品リストの情報を表示 -->
+		<?php foreach ($tblitem as $tblitem): ?>
+			<tr>
+				<td><?= $tblitem -> itemName ?></td>
+				<td>
+			<!-- 画像リンク -->
+				<?= $this -> Html -> link($this -> Html -> image('/image/' . $tblitem -> itemImg), array(
+						'controller' => 'ecsite', 'action' => 'shohindata', $tblitem -> itemId), array(
+								'escape' => false)) ?>
+				</td>
+				<td><?= $tblitem -> itemData ?></td>
+				<td>&yen;<?= $tblitem -> itemPrice ?></td>
+			<tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>

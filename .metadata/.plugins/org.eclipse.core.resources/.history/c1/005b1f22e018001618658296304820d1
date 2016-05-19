@@ -1,0 +1,11 @@
+<?php
+
+
+
+
+class tblCategoryTable extends Table {
+
+	public function initialize(array $config) {
+
+	}
+}
