@@ -2898,3 +2898,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-19 08:32:51.568
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-19 12:55:39.316
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2016-05-19 13:03:06.813 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-19 13:03:14.537
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-19 13:03:43.928
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-19 13:03:43.928
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
