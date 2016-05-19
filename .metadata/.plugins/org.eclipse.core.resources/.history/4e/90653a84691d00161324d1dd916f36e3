@@ -4,6 +4,11 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
+use Cake\Validation\Validation;
+use App\Model\Entity\Tblclient;
+use App\Model\Table\TblclientTable;
+use Cake\Validation\Validator;
+use PhpParser\Node\Stmt\ElseIf_;
 
 class EcsiteController extends AppController {
 
@@ -17,21 +22,8 @@ class EcsiteController extends AppController {
 		$this-> tblClient = TableRegistry::get('tblclient');
 	}
 
-	public $paginate = array(
-			'limit' => 5
-	);
-
-	public $helpers = array(
-			'Paginator' => array(
-					'templates' => 'paginator-templates'
-			)
-	);
-
-	public function index() {
-		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
-	}
-
 	public function inputdata() {
+
 
 		//postデータが有るかの判断
 		if($this->request->is('post')&&isset($this->request->data['clientName1'])) {
@@ -92,6 +84,57 @@ class EcsiteController extends AppController {
 			$tblclient = $this->tblClient->patchEntity($tblclient,$this->request->data);
 			if($this->tblClient->save($tblclient)) {
 				$this->redirect(array('action'=>'buykakunin'));
+			}
+		}
+	}
+
+	public $paginate = array(
+			'limit' => 5
+	);
+
+	public $helpers = array(
+			'Paginator' => array(
+					'templates' => 'paginator-templates'
+			)
+	);
+
+	//public $testarray = array();
+
+	/**
+	 * Initialize method
+	 * {@inheritDoc}
+	 * @see \App\Controller\AppController::initialize()
+	 */
+<<<<<<< HEAD
+	public function initialize() {
+		parent::initialize();
+        $this -> loadComponent('Paginator');
+		// 参照テーブルを設定
+        $this -> tblItem = TableRegistry::get('tblitem');
+        $this -> tblCategory = TableRegistry::get('tblcategory');
+	}
+=======
+
+>>>>>>> develop/20160531
+
+	public function index() {
+		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
+	}
+
+	/**
+	 * Shohinlist method
+	 * All Data
+	 */
+	public function shohinlist() {
+		$this -> set('tblitem', $this -> paginate($this -> tblItem));
+
+		// POST送信された場合
+		if($this -> request -> is('post')) {
+			$find = $this -> request -> data('find');
+				// 検索フォームが空でない場合
+				if($find != null) {
+				$tblitem = $this -> set('tblitem', $this -> tblItem -> find()
+						-> where(array("concat(itemName, itemData, itemPrice) like " => '%' .$find . '%')));
 			}
 		}
 	}
@@ -205,4 +248,15 @@ class EcsiteController extends AppController {
 		$_SESSION['cartitemlist'] = $newitemlist;
 		return $this -> redirect(array('action' => 'cart'));
 	}
+<<<<<<< HEAD
+
+	/**
+	 * Alldelete method
+	 */
+	public function cartempty() {
+		$this -> Session -> delete('cartitemlist');
+		return $this -> redirect(array('action' => 'cart'));
+	}
+=======
+>>>>>>> develop/20160531
 }

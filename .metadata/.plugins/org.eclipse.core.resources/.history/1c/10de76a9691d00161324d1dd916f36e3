@@ -17,16 +17,6 @@ class EcsiteController extends AppController {
 		$this-> tblClient = TableRegistry::get('tblclient');
 	}
 
-	public $paginate = array(
-			'limit' => 5
-	);
-
-	public $helpers = array(
-			'Paginator' => array(
-					'templates' => 'paginator-templates'
-			)
-	);
-
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 	}
@@ -95,6 +85,16 @@ class EcsiteController extends AppController {
 			}
 		}
 	}
+
+	public $paginate = array(
+			'limit' => 5
+	);
+
+	public $helpers = array(
+			'Paginator' => array(
+					'templates' => 'paginator-templates'
+			)
+	);
 
 	/**
 	 * Categorylist method
@@ -205,4 +205,15 @@ class EcsiteController extends AppController {
 		$_SESSION['cartitemlist'] = $newitemlist;
 		return $this -> redirect(array('action' => 'cart'));
 	}
+<<<<<<< HEAD
+
+	/**
+	 * Alldelete method
+	 */
+	public function cartempty() {
+		$this -> Session -> delete('cartitemlist');
+		return $this -> redirect(array('action' => 'cart'));
+	}
+=======
+>>>>>>> develop/20160531
 }
