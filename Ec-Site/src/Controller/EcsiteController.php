@@ -110,6 +110,7 @@ class EcsiteController extends AppController {
 	 * @param unknown $id
 	 */
 	public function categorylist($id = null) {
+		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 		// カテゴリ番号をSessionへ書き込む
 		$this -> Session -> write('Category.id', $id);
 		$tblitem = $this -> set('tblitem', $this -> paginate($this -> tblItem -> find()
@@ -130,6 +131,7 @@ class EcsiteController extends AppController {
 	 * Shohindata method
 	 * @param unknown $id */
 	public function shohindata($id = null) {
+		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
 
@@ -147,6 +149,7 @@ class EcsiteController extends AppController {
 	 * Cart method
 	 */
 	public function cart() {
+		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 		// SelectBoxの値をSessionへ書き込む
 		$this -> Session -> write('Item.num', $this -> request -> data('select'));
 
