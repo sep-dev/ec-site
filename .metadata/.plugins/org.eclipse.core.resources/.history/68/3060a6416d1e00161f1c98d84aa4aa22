@@ -396,7 +396,7 @@ body {
 
 .list tbody tr td  {
 	text-align:center;
-	margim-top:5px;
+	margim-bottom:5px;
 }
 /*---------------paginator-----------------*/
 
@@ -485,11 +485,6 @@ span{
 	text-align:center;
 }
 
-.cart tr td img{
-	width:250px;
-	height:200px;
-}
-
 /*----------------shohindata----------------*/
 
 .shohindata{
@@ -499,7 +494,6 @@ span{
 .shohindata fieldset{
 	border:none;
 	background:#ebfaf9;
-	padding: 50px;
 }
 
 .shohindata h3{
@@ -538,13 +532,9 @@ span{
 	color:#eee;
 }
 
-.shohindata fieldset p img{
+.shohindata tr td img{
 	width:250px;
 	height:200px;
-}
-
-.shohindata fieldset{
-	text-align:center;
 }
 
 /*-------------------@media----------------------*/

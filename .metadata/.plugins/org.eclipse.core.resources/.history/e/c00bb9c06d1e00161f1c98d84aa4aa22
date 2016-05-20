@@ -485,11 +485,6 @@ span{
 	text-align:center;
 }
 
-.cart tr td img{
-	width:250px;
-	height:200px;
-}
-
 /*----------------shohindata----------------*/
 
 .shohindata{

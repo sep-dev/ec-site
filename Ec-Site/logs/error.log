@@ -61310,3 +61310,322 @@ Stack Trace:
 #3 {main}
 
 
+2016-05-20 08:50:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/koukakuri_icon.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 08:55:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 08:56:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 08:58:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:06:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/shohindata/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:06:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:07:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:08:15 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::image() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'image',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/image
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 09:08:23 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::image() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'image',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/image/aji.jpg
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 09:09:53 Warning: Warning (2): htmlspecialchars() expects parameter 1 to be string, resource given in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Core\functions.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+htmlspecialchars - [internal], line ??
+h - CORE\src\Core\functions.php, line 68
+include - APP/Template\Ecsite\categorylist.ctp, line 34
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-05-20 09:09:54 Warning: Warning (2): htmlspecialchars() expects parameter 1 to be string, resource given in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Core\functions.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+htmlspecialchars - [internal], line ??
+h - CORE\src\Core\functions.php, line 68
+include - APP/Template\Ecsite\categorylist.ctp, line 34
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-05-20 09:09:54 Warning: Warning (2): htmlspecialchars() expects parameter 1 to be string, resource given in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Core\functions.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+htmlspecialchars - [internal], line ??
+h - CORE\src\Core\functions.php, line 68
+include - APP/Template\Ecsite\categorylist.ctp, line 34
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-05-20 09:09:55 Warning: Warning (2): htmlspecialchars() expects parameter 1 to be string, resource given in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Core\functions.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+htmlspecialchars - [internal], line ??
+h - CORE\src\Core\functions.php, line 68
+include - APP/Template\Ecsite\categorylist.ctp, line 34
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-05-20 09:09:55 Warning: Warning (2): htmlspecialchars() expects parameter 1 to be string, resource given in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Core\functions.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
+htmlspecialchars - [internal], line ??
+h - CORE\src\Core\functions.php, line 68
+include - APP/Template\Ecsite\categorylist.ctp, line 34
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 612
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-05-20 09:09:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:10:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:11:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/Resource%20id%20
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:17:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/0
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/cart
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:17:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/0
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/cart
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:18:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/0
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/cart
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:31:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/0
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/cart
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:32:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Image could not be found.
+Exception Attributes: array (
+  'class' => 'Image',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/image/0
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/cart
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
