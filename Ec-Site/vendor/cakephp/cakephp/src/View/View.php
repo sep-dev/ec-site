@@ -154,7 +154,7 @@ class View implements EventDispatcherInterface
      *
      * @var bool
      */
-    public $autoLayout = false;
+    public $autoLayout = true;
 
     /**
      * File extension. Defaults to CakePHP's template ".ctp".

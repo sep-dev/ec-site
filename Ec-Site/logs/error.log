@@ -52331,3 +52331,979 @@ Stack Trace:
 #3 {main}
 
 
+2016-05-19 08:50:21 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'f8SKMvH1', Array)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(38): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-19 08:50:59 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'Act034441', Array)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(38): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-19 08:51:21 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'Act034441', Array)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(38): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-19 08:52:27 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'Act034441', Array)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(39): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-19 08:57:15 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'Act034441', Array)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(39): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-19 09:01:25 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'Act034441', Array)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(39): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-19 09:04:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:04:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:27:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:27:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:27:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:27:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:27:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:27:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:30:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:30:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:30:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:30:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:30:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 09:30:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:18:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:18:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:18:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:18:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:18:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:18:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shohin_data.html could not be found.
+Exception Attributes: array (
+  'class' => 'Shohin_data.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/shohin_data.html
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:19:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shohin_data.html could not be found.
+Exception Attributes: array (
+  'class' => 'Shohin_data.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/shohin_data.html
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shohin_data.html could not be found.
+Exception Attributes: array (
+  'class' => 'Shohin_data.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/shohin_data.html
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/webroot/img/hokke.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:20:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:21:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:21:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:21:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:21:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:21:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-19 10:30:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shohin_data.html could not be found.
+Exception Attributes: array (
+  'class' => 'Shohin_data.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/shohin_data.html
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 00:31:59 Error: Fatal Error (1): Call to undefined function Cake\Controller\layout() in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php, line 595]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-20 00:32:43 Error: Fatal Error (1): Call to a member function layout() on a non-object in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php, line 595]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-05-20 00:54:13 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::shohinlist() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'shohinlist',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/shohinlist
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/categorylist/5
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 02:06:59 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::shohinlist() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'shohinlist',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/shohinlist
+Referer URL: http://localhost/ec-site/Ec-Site/Ecsite
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
