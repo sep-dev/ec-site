@@ -1,4 +1,6 @@
-<div>	<h3>Cart</h3>
+
+	<div class="cart">
+		<h3>Cart</h3>
 	<?php if(count($cartitemlist) != 0): ?>
 	<?= $this -> Form -> postlink('カートを空にする', array(
 			'controller' => 'ecsite', 'action' => 'cartempty'), array(
@@ -41,4 +43,4 @@
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?></p>
 	<p><?= $this -> Html -> link('購入する', array(
 			'controller' => 'ecsite', 'action' => 'inputdata')) ?></p>
-</div>
+	</div>

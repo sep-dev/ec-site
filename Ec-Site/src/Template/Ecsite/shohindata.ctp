@@ -1,4 +1,4 @@
-<div class="container">
+
 <div class="contents">
 <div class="list">
 	<h3>商品詳細: <?= h($tblitem -> itemName) ?></h3>
@@ -22,6 +22,5 @@
 	</fieldset>
 	<?= $this -> Form -> submit('Cart') ?>
 	<?= $this -> Form -> end() ?>
-</div>
 </div>
 </div>

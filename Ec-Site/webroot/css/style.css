@@ -4,7 +4,7 @@ Contents --------------------------------------------------------------------- *
 
 body {
 	margin: 0px;
-	min-height:1500px;
+	min-height:1300px;
 	min-width:1300px;
 	height:100%;
 }
@@ -17,11 +17,13 @@ body {
 	}
 
 .contents{
-	width:65%;
+	width:60%;
+	float:left;
 	padding-top:3%;
 	padding-left:3%;
 	padding-bottom:80px;
-	float:left;
+	margin:0;
+	padding:0;
 }
 
 .content p{
@@ -30,8 +32,11 @@ body {
 /*------top_page----------*/
 
 .top_page{
-	width:80%;
-	margin:0 9%;
+	clear:both
+	width:60%;
+	margin-top:50px;
+	padding:0;
+	float: right;
 }
 
 .top_page h2{
@@ -40,21 +45,20 @@ body {
 }
 
 .season{
-	margin-left:5%;
+	margin:0;
 }
 
 .osusume{
-	margin-left:5%;
-
+	margin:0;
 }
 
 .new{
-	margin-left:5%;
+	margin:0;
 }
 
 .news{
 	width:80%;
-	margin: 50px 9% auto -3%;
+	margin: 50px 9% auto 25%;
 	float:left;
 	background-color:#f0d1c1;
 	border: solid 2px #ff8000;
@@ -308,7 +312,8 @@ body {
 
 .list{
 	width:100%;
-	margin-top:-50px;
+	margin-top:5%;
+	margin-left:5%;
 }
 
 .list h3{
@@ -384,21 +389,29 @@ body {
 
 /*-------------------inputdata----------------*/
 
-#contents{
-	width:90%;
-	margin: 10px 5%;
+.content{
+	width:80%;
+	margin: 0 10%;
 }
 
-#contents tr th{
+.content caption{
+	padding:30px;
+}
+
+.content p{
+	float:right;
+}
+
+.content tr th{
 	height:40px;
 }
 
-#contents td{
+.content td{
 	width:700px;
 	height:50px;
 }
 
-#contents span{
+span{
 	color:red;
 }
 
@@ -409,6 +422,11 @@ body {
 }
 
 /*-------cart--------*/
+
+.cart{
+	width:60%;
+	float:left;
+}
 
 .cart h3{
 	font-size:1.8em;
