@@ -429,6 +429,7 @@ span{
 .cart{
 	width:60%;
 	float:left;
+	margin:50px;
 }
 
 .cart h3{
