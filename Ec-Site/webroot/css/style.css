@@ -2,22 +2,28 @@
 /*
 Contents --------------------------------------------------------------------- */
 
+html{
+	height:100%;
+}
+
 body {
 	margin: 0px;
+	height:100%;
 	min-height:1300px;
 	min-width:1300px;
 	height:100%;
 }
 
 .container{
-	width:100%;
-	padding: auto auto 500px auto;
 	position: relative;
-	min-hight:100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%
 	}
 
 .contents{
 	width:60%;
+	min-height:100%;
 	float:left;
 	padding-top:3%;
 	padding-left:3%;
@@ -32,8 +38,6 @@ body {
 /*------top_page----------*/
 
 .top_page{
-	clear:both
-	width:60%;
 	margin-top:50px;
 	padding:0;
 	float: right;
@@ -166,9 +170,10 @@ body {
 
 /*------------footer------------*/
 
+
 .footer{
 	background-color:#ffffff;
-	bottom: -120%;
+	bottom: -200%;
 	width: 100%;
 	border-top-style: solid;
 	border-top-width: 1px;
