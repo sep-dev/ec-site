@@ -10,7 +10,7 @@
 	<fieldset>
 		<p><?= $this -> Html -> image('/image/' .$tblitem -> itemImg)?></p>
 		<p><?= h($tblitem -> itemData) ?></p>
-		<p><?= number_format($tblitem -> itemPrice) ?></p>
+		<p>&yen;<?= number_format($tblitem -> itemPrice) ?></p>
 		<?php $selectnum = array();
 			for($num = 1; $num <= 5; $num++) {
 				array_push($selectnum, array(

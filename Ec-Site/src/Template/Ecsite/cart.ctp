@@ -1,5 +1,8 @@
-<div>	<h3>Cart</h3>
+<div>
+	<h3>Cart</h3>
 	<?php if(count($cartitemlist) != 0): ?>
+		<p><?= $this -> Html -> link('購入する', array(
+			'controller' => 'ecsite', 'action' => 'inputdata')) ?></p>
 	<?= $this -> Form -> postlink('カートを空にする', array(
 			'controller' => 'ecsite', 'action' => 'cartempty'), array(
 					'confirm' => 'Are you sure?')) ?>
@@ -35,10 +38,6 @@
 		<h3>Not Data.</h3>
 	<?php endif; ?>
 	<!-- 続ける場合は、配列にセッション情報を格納 -->
-	<?= $this -> Html -> link('続ける', array(
-			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
 	<p><?= $this -> Html -> link('買い物を続ける', array(
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?></p>
-	<p><?= $this -> Html -> link('購入する', array(
-			'controller' => 'ecsite', 'action' => 'inputdata')) ?></p>
 </div>
