@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="-384" key="DIALOG_X_ORIGIN"/>
-		<item value="168" key="DIALOG_Y_ORIGIN"/>
+		<item value="279" key="DIALOG_X_ORIGIN"/>
+		<item value="145" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="-1" key="dialogHeight"/>
@@ -16,13 +16,11 @@
 		<list key="textArray">
 		</list>
 	</section>
-	<section name="NewWizardAction">
-	</section>
-	<section name="FileExtensionDialogSettings">
-		<item value="963" key="DIALOG_WIDTH"/>
+	<section name="InstallationDialogSettings">
+		<item value="1272" key="DIALOG_WIDTH"/>
 		<item value="1|メイリオ|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|メイリオ" key="DIALOG_FONT_NAME"/>
-		<item value="338" key="DIALOG_HEIGHT"/>
-		<item value="59" key="DIALOG_X_ORIGIN"/>
-		<item value="187" key="DIALOG_Y_ORIGIN"/>
+		<item value="881" key="DIALOG_HEIGHT"/>
+		<item value="40" key="DIALOG_X_ORIGIN"/>
+		<item value="24" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

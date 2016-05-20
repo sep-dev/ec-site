@@ -21,6 +21,7 @@ class EcsiteController extends AppController {
 
 	public function initialize() {
 		parent::initialize();
+		$this->viewBuilder()->layout('menu');
 		$this->Session = $this->request->session();
 		$this -> loadComponent('Paginator');
 		// 参照テーブルを設定
