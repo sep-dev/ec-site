@@ -32,6 +32,9 @@ class EcsiteController extends AppController {
 
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
+		$this -> set('tblitem', $this -> tblItem -> find('all',array('order'=>'rand()',
+													'limit'=>2)));
+		$this -> set('newitem', $this -> tblItem -> find() -> order(array('itemId'=>'DESC')) -> limit(2));
 	}
 	public function inputdata() {
 
