@@ -54940,3 +54940,331 @@ Stack Trace:
 
 
 >>>>>>> ba6bebbee61652b405a4ee44968b455adc9278da
+2016-05-20 07:25:47 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', 'test', Array)
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#10 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#11 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php(34): Cake\ORM\Table->find('all')
+#13 [internal function]: App\Controller\EcsiteController->index()
+#14 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#15 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#17 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2016-05-20 07:26:16 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:26:17 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:26:18 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:26:18 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:26:19 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:26:19 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/Ec-Site/ecsite/index
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:26:22 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/Ecsite
+Referer URL: http://localhost/Ec-Site/ecsite/categorylist/1
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:37 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:37 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:38 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:38 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:39 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:39 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:47 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/asari_top.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:47 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/hokke.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:48 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/shrimp.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:48 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/kani.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:48 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/agi_top.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-20 07:30:49 Error: [Cake\Controller\Exception\MissingActionException] Action EcSiteController::ecSite() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcSiteController',
+  'action' => 'ecSite',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Ec-Site/ec-site/Ec-Site/img/uni.jpg
+Referer URL: http://localhost/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

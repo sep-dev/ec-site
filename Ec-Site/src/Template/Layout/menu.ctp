@@ -34,7 +34,8 @@
 			<div class="header_box">
 				<div class="btn_watch"><i class="fa fa-shopping-cart" aria-hidden="true"></i><?= $this -> Html -> link('カートの中を見る', array(
 						'controller' => 'ecsite', 'action' => 'cart')) ?></div>
-					<p><a onclick="location.href='http://localhost/ec-site/Ec-Site/Ecsite'"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></p>
+					<p><i class="fa fa-home" aria-hidden="true"></i><?= $this -> Html -> link('HOME', array(
+						'controller' => 'ecsite', 'action' => 'index')) ?></p>
 				</div>
 			</div>
 		<!-- //headerここまで△ -->
