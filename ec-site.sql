@@ -18,4 +18,4 @@ create table tblItem(itemId int primary key not null auto_increment,
 					itemImg varchar(255));
 create table tblCategory(categoryId int primary key not null auto_increment,
 					categoryName nvarchar(255) not null,
-					categotyImg varchar(255) not null);
+					categoryImg varchar(255) not null);
