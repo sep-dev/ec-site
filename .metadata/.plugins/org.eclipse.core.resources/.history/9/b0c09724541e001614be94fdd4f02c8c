@@ -480,13 +480,11 @@ span{
 
 	.rogo h1{
 		clear:both;
-		padding-left:50px;
 	}
 
 	.btn_watch , .header_box p{
 	float:left;
-	margin-top:10px;
-	padding-left:50px;
+	padding-top:50px;
 	text-size:1em;
 }
 

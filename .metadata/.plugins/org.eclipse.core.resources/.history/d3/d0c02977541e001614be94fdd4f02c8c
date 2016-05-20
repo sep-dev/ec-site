@@ -486,7 +486,7 @@ span{
 	.btn_watch , .header_box p{
 	float:left;
 	margin-top:10px;
-	padding-left:50px;
+	margin-left:5px;
 	text-size:1em;
 }
 

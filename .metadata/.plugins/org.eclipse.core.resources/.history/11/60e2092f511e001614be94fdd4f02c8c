@@ -473,28 +473,12 @@ span{
 @media (max-width: 1300px){
 
 	.contents{
-
-		width:50%;
-		margin:0;
-	}
-
-	.rogo h1{
 		clear:both;
-		padding-left:50px;
+		width:70%;
 	}
-
-	.btn_watch , .header_box p{
-	float:left;
-	margin-top:10px;
-	padding-left:50px;
-	text-size:1em;
-}
 
 	.side_menu{
-			clear:both;
-			width:10%;
-			margin: 0;
-			padding:0;
-
-		}
+		width:20%;
+		margin: 0;
+	}
 }

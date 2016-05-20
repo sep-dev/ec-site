@@ -480,14 +480,10 @@ span{
 
 	.rogo h1{
 		clear:both;
-		padding-left:50px;
 	}
 
-	.btn_watch , .header_box p{
+.btn_watch , .btn_watch p{
 	float:left;
-	margin-top:10px;
-	padding-left:50px;
-	text-size:1em;
 }
 
 	.side_menu{
@@ -495,6 +491,5 @@ span{
 			width:10%;
 			margin: 0;
 			padding:0;
-
 		}
 }

@@ -476,25 +476,19 @@ span{
 
 		width:50%;
 		margin:0;
+		padding:0;
 	}
 
-	.rogo h1{
-		clear:both;
-		padding-left:50px;
+	.header_box , .btn_watch{
+		margin-left: 50px;
+		padding:0;
+		float:left;
 	}
-
-	.btn_watch , .header_box p{
-	float:left;
-	margin-top:10px;
-	padding-left:50px;
-	text-size:1em;
-}
 
 	.side_menu{
-			clear:both;
-			width:10%;
-			margin: 0;
-			padding:0;
-
-		}
+		clear:both;
+		width:10%;
+		margin: 0;
+		padding:0;
+	}
 }
