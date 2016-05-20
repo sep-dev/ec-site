@@ -281,31 +281,35 @@ body {
 	padding-left:5px;
 }
 
-
+/*------------------fontawesameを使わない場合-------------------*/
+/*
 .side_menu li a:before{
 	display:block;
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: 5px;
-	width: 27px;
-	height: 27px;
+	width: 16px;
+	height: 16px;
 	margin-top: -8px;
 	border-radius: 50%;
-	background: #ffffff;
+	background: #ffcc11;
 }
 .side_menu li a:after{
 	display:block;
 	content: "";
 	position: absolute;
-	top: 52%;
-	left: 17px;
+	top: 50%;
+	left: 12px;
 	width: 0;
 	height: 0;
 	margin-top: -5px;
-	border: 7px solid transparent;
-	border-left: 7px solid #1e90ff;
+	border: 5px solid transparent;
+	border-left: 5px solid #1e90ff;
 }
+*/
+
+
 
 /*-----------shohinlist,categorylist--------------*/
 
@@ -481,11 +485,6 @@ span{
 	text-align:center;
 }
 
-.cart tr td img{
-	width:250px;
-	height:200px;
-}
-
 /*----------------shohindata----------------*/
 
 .shohindata{
@@ -495,7 +494,6 @@ span{
 .shohindata fieldset{
 	border:none;
 	background:#ebfaf9;
-	padding: 50px;
 }
 
 .shohindata h3{
@@ -537,10 +535,6 @@ span{
 .shohindata fieldset p img{
 	width:250px;
 	height:200px;
-}
-
-.shohindata fieldset{
-	text-align:center;
 }
 
 /*-------------------@media----------------------*/

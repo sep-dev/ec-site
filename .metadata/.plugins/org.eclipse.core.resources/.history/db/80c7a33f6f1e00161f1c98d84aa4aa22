@@ -298,7 +298,7 @@ body {
 	display:block;
 	content: "";
 	position: absolute;
-	top: 52%;
+	top: 50%;
 	left: 17px;
 	width: 0;
 	height: 0;
