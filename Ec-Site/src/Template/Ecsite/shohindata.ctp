@@ -7,12 +7,14 @@
 			'url' => array('controller' => 'ecsite', 'action' => 'cart')
 	)) ?>
 	<!-- 戻るボタン -->
-	<?= $this -> Html -> link('Back', array(
+	<button><?= $this -> Html -> link('Back', array(
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
+	</button>
+
 	<fieldset>
 		<p><?= $this -> Html -> image('/image/' .$tblitem -> itemImg)?></p>
 		<p><?= h($tblitem -> itemData) ?></p>
-		<p><?= number_format($tblitem -> itemPrice) ?></p>
+		<p>&yen;<?= number_format($tblitem -> itemPrice) ?></p>
 		<?php $selectnum = array();
 			for($num = 1; $num <= 5; $num++) {
 				array_push($selectnum, array(

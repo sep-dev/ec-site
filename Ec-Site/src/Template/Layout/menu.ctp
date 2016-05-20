@@ -44,8 +44,8 @@
 								<li><a href="ecsite/categorylist/3"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/asari_icon.jpg" alt=""/></a></li>
 								<li><a href="ecsite/categorylist/4"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/ika_tako_icon.jpg" alt=""/></a></li>
 								<li><a href="ecsite/categorylist/5"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/ikura_icon.jpg" alt=""/></a></li>
-								<li><a href="ecsite/categorylist"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/kakouhin_icon.jpg" alt=""/></a></li>
-								<li><a href="ecsite/categorylist"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/kaisou_icon.jpg" alt=""/></a></li>
+								<li><a href="ecsite/categorylist/0"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/kakouhin_icon.jpg" alt=""/></a></li>
+								<li><a href="ecsite/categorylist/0"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><img src="img/kaisou_icon.jpg" alt=""/></a></li>
 							</ul>
 						</div>
 					<!-- //side_menuここまで△ -->

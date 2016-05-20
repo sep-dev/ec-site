@@ -355,7 +355,6 @@ body {
 	width:70px;
 	height:37px;
 	border-radius:50px;
-
 	}
 
 .list fieldset button:hover{
@@ -388,6 +387,20 @@ body {
 .list thead tr{
 	font-size:1.5em;
 	color:#3a5;
+}
+
+/*---------------paginator-----------------*/
+
+.paginator{
+	margin-top:25px;
+}
+
+.paginator span{
+	display:inline-block;
+	margin:1px;
+	padding:10px;
+	border: solid 1px #555555;
+	color:#0000ff;
 }
 
 /*-------------------inputdata----------------*/
@@ -464,7 +477,53 @@ span{
 }
 
 /*----------------shohindata----------------*/
-.shohindata img{
+
+.shohindata{
+	margin:10px auto auto 50px;
+}
+
+.shohindata fieldset{
+	border:none;
+	background:#ebfaf9;
+}
+
+.shohindata h3{
+	font-size:2em;
+}
+
+.shohindata p{
+	font-size:1.4em;
+}
+
+.shohindata button{
+	margin:5px 0 20px 10px;
+	background-color:#c0c0c0;
+	width:70px;
+	height:37px;
+	border-radius:50px;
+}
+
+.shohindata button:hover{
+	background-color:#999;
+	border:none;
+	color:#eee;
+}
+
+.shohindata .submit input{
+	margin:5px 0 20px 10px;
+	background-color:#c0c0c0;
+	width:70px;
+	height:37px;
+	border-radius:50px;
+}
+
+.shohindata .submit input:hover{
+	background-color:#999;
+	border:none;
+	color:#eee;
+}
+
+.shohindata tr td img{
 	width:250px;
 	height:200px;
 }

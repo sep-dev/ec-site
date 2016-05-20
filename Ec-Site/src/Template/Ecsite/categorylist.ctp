@@ -42,10 +42,12 @@
 			</tbody>
 		</table>
 		<!-- Paginator使用(5件表示) -->
-		<?= $this -> Paginator -> first('<<First'); ?>
-		<?= $this -> Paginator -> prev('<Prev'); ?>
-		<?= $this -> Paginator -> numbers(); ?>
-		<?= $this -> Paginator -> next('Next>'); ?>
-		<?= $this -> Paginator -> last('Last>>'); ?>
+		<div class="paginator">
+			<?= $this -> Paginator -> first('<<First'); ?>
+			<?= $this -> Paginator -> prev('<Prev'); ?>
+			<?= $this -> Paginator -> numbers(); ?>
+			<?= $this -> Paginator -> next('Next>'); ?>
+			<?= $this -> Paginator -> last('Last>>'); ?>
+		</div>
 	</div>
 </div>

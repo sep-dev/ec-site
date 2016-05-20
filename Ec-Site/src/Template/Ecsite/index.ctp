@@ -5,23 +5,23 @@
 			<div class="top_page">
 				<div class="season">
 					<h2>季節の商品</h2>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/agi_top.jpg" width="300px" height="200px"></a>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/asari_top.jpg" width="300px" height="200px"></a>
+					<a href="ecsite/shohindata/4"><img src="http://localhost/ec-site/Ec-Site/img/agi_top.jpg" width="300px" height="200px"></a>
+					<a href="ecsite/shohindata/14"><img src="http://localhost/ec-site/Ec-Site/img/asari_top.jpg" width="300px" height="200px"></a>
 					<p>今が旬のあじとあさり！ぜひこの機会に食べてみてください！！</p>
 				</div>
 
 				<div class="osusume">
 					<h2>おすすめ商品</h2>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/kani.jpg" width="300px" height="200px"></a>
-					<img src="http://localhost/ec-site/Ec-Site/img/shrimp.jpg" width="300px" height="200px">
+					<a href="ecsite/shohindata/1"><img src="http://localhost/ec-site/Ec-Site/img/kani.jpg" width="300px" height="200px"></a>
+					<a href="ecsite/shohindata/3"><img src="http://localhost/ec-site/Ec-Site/img/shrimp.jpg" width="300px" height="200px"></a>
 					<p>今一番売れているかにと新鮮なえびがおすすめです！！</p>
 				</div>
 
 				<div class="new">
 					<h2>新着商品</h2>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/hokke.jpg" width="300px" height="200px"></a>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/uni.jpg" width="300px" height="200px"></a>
-					<p>大人気のうにと好評のほっけが入荷しました！！</p>
+					<a href="ecsite/shohindata/21"><img src="http://localhost/ec-site/Ec-Site/image/ikura.jpg" width="300px" height="200px"></a>
+					<a href="ecsite/shohindata/2"><img src="http://localhost/ec-site/Ec-Site/img/uni.jpg" width="300px" height="200px"></a>
+					<p>大人気のいくらと好評のうにが入荷しました！！</p>
 
 				</div>
 

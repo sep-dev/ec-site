@@ -4,12 +4,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
-use Cake\Validation\Validation;
 use App\Model\Entity\Tblclient;
-use App\Model\Table\TblclientTable;
-use Cake\Validation\Validator;
-use PhpParser\Node\Stmt\ElseIf_;
-use Cake\Test\Fixture\ThingsFixture;
 use Cake\Network\Email\Email;
 
 class EcsiteController extends AppController {
@@ -215,6 +210,12 @@ class EcsiteController extends AppController {
 			}
 		}
 		$_SESSION['cartitemlist'] = $newitemlist;
+		return $this -> redirect(array('action' => 'cart'));
+	}
+
+	public function cartempty() {
+
+		$this -> Session -> delete('cartitemlist');
 		return $this -> redirect(array('action' => 'cart'));
 	}
 
