@@ -1,4 +1,6 @@
-<div>
+
+<div class="contents">
+<div class="shohindata">
 	<h3>商品詳細: <?= h($tblitem -> itemName) ?></h3>
 	<?= $this -> Form -> create(null, array(
 			'type' => 'post',
@@ -20,4 +22,5 @@
 	</fieldset>
 	<?= $this -> Form -> submit('Cart') ?>
 	<?= $this -> Form -> end() ?>
+</div>
 </div>

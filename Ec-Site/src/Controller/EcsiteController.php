@@ -21,6 +21,7 @@ class EcsiteController extends AppController {
 
 	public function initialize() {
 		parent::initialize();
+		$this->viewBuilder()->layout('menu');
 		$this->Session = $this->request->session();
 		$this -> loadComponent('Paginator');
 		// 参照テーブルを設定
@@ -34,6 +35,7 @@ class EcsiteController extends AppController {
 	}
 	public function inputdata() {
 
+		$this->viewBuilder()->layout('inputdata');
 		//postデータが有るかの判断
 		if($this->request->is('post')&&isset($this->request->data['clientName1'])) {
 				//メールアドレスが確認用と同じかを判断
