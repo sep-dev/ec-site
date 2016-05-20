@@ -15,7 +15,7 @@
 </head>
 <body>
 <?= $this->Form->create(null,array('type'=>'post'))?>
-	<div id="contents">
+	<div class="content">
 		<br> <br>
 		<div align="center">
 			<div align="center">
@@ -50,11 +50,11 @@
 								お名前<span>※</span>
 							</div></th>
 						<td>
-							姓<?= $this->Form->input('clientName1',array('size'=>'70'
+							姓<?= $this->Form->input('clientName1',array('size'=>'20'
 								,'maxlength'=>'80','label'=>false)) ?>
-							<br><br>名<?= $this->Form->input('clientName2',array('size'=>'70'
+							名<?= $this->Form->input('clientName2',array('size'=>'20'
 								,'maxlength'=>'80','label'=>false)) ?>
-
+						</td>
 					</tr>
 					<tr align="center">
 						<th colspan="2" bgcolor="#A4A4A4"><div>

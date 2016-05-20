@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<div id="container">
+
 		<div class="contents">
 			<div class="top_page">
 				<div class="season">
@@ -38,7 +38,7 @@
 					 </ul>
 				</div>
 		</div>
-	</div>
+
 
 
 </html>
