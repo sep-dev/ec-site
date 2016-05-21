@@ -27,7 +27,7 @@
 				</tr>
 				<tr align="center">
 					<th colspan="2" bgcolor="#A4A4A4">お名前</th>
-					<td><?= ($adddata['clientName1']),($adddata['clientName1']) ?>
+					<td><?= ($adddata['clientName1']),($adddata['clientName2']) ?>
 						<?= $this->Form->hidden('clientName' ,
 								array('value' => ($adddata['clientName1']).($adddata['clientName2'])));?></td>
 				</tr>
