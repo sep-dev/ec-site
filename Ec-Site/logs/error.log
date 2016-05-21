@@ -54940,3 +54940,31 @@ Stack Trace:
 
 
 >>>>>>> ba6bebbee61652b405a4ee44968b455adc9278da
+2016-05-20 09:01:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shohin_data.html could not be found.
+Exception Attributes: array (
+  'class' => 'Shohin_data.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/shohin_data.html
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-05-20 09:23:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Shohin_data.html could not be found.
+Exception Attributes: array (
+  'class' => 'Shohin_data.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /ec-site/Ec-Site/shohin_data.html
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite
+Stack Trace:
+#0 C:\Users\machidatakahiro\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
