@@ -1,12 +1,16 @@
-<div>
+
+<div class="contents">
+<div class="shohindata">
 	<h3>商品詳細: <?= h($tblitem -> itemName) ?></h3>
 	<?= $this -> Form -> create(null, array(
 			'type' => 'post',
 			'url' => array('controller' => 'ecsite', 'action' => 'cart')
 	)) ?>
 	<!-- 戻るボタン -->
-	<?= $this -> Html -> link('Back', array(
+	<button><?= $this -> Html -> link('Back', array(
 			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
+	</button>
+
 	<fieldset>
 		<p><?= $this -> Html -> image('/image/' .$tblitem -> itemImg)?></p>
 		<p><?= h($tblitem -> itemData) ?></p>
@@ -20,4 +24,5 @@
 	</fieldset>
 	<?= $this -> Form -> submit('Cart') ?>
 	<?= $this -> Form -> end() ?>
+</div>
 </div>

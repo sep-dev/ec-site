@@ -1,4 +1,4 @@
-<div>
+<div class="cart">
 	<h3>Cart</h3>
 	<?php if(count($cartitemlist) != 0): ?>
 		<p><?= $this -> Html -> link('購入する', array(
