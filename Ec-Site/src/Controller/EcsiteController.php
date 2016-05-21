@@ -32,9 +32,11 @@ class EcsiteController extends AppController {
 
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
-		$this -> set('tblitem', $this -> tblItem -> find('all',array('order'=>'rand()',
-													'limit'=>2)));
-		$this -> set('newitem', $this -> tblItem -> find() -> order(array('itemId'=>'DESC')) -> limit(2));
+		$tblitem = $this -> set('tblitem', $this -> tblItem -> find('all',array(
+					'order'=>'rand()',
+					'limit'=>2)));
+		$this -> set('newitem', $this -> tblItem -> find()
+					-> order(array('itemId'=>'DESC')) -> limit(2));
 	}
 	public function inputdata() {
 
@@ -138,14 +140,18 @@ class EcsiteController extends AppController {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
 
-		// Sessionの読み込み
-		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
+		if(($this -> Session -> read('Category.id')) == "") {
+			$this -> Session -> write('Category.id', $this -> $tblitem -> itemCategory);
+		} else {
+			// Sessionの読み込み
+			$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 
-		// Sessionへ商品データの書き込み
-		$this -> Session -> write('Item.id', $tblitem -> itemId);
-		$this -> Session -> write('Item.name', $tblitem -> itemName);
-		$this -> Session -> write('Item.img', $tblitem -> itemImg);
-		$this -> Session -> write('Item.price', $tblitem -> itemPrice);
+			// Sessionへ商品データの書き込み
+			$this -> Session -> write('Item.id', $tblitem -> itemId);
+			$this -> Session -> write('Item.name', $tblitem -> itemName);
+			$this -> Session -> write('Item.img', $tblitem -> itemImg);
+			$this -> Session -> write('Item.price', $tblitem -> itemPrice);
+		}
 	}
 
 	/**
