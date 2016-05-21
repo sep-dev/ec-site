@@ -6,20 +6,24 @@
 				<div class="osusume">
 					<h2>おすすめ商品</h2>
 					<?php foreach ($tblitem as $tblitem):?>
+					<div class="osusume_nakami">
 						<?= $this -> Html -> link($this -> Html -> image('/image/' . $tblitem -> itemImg), array(
 							'controller' => 'ecsite', 'action' => 'shohindata', $tblitem -> itemId), array(
 									'escape' => false)) ?>
 						<p><?=$tblitem->itemName?>				&yen;<?=number_format($tblitem -> itemPrice)?></p>
+					</div>
 					<?php endforeach;?>
 				</div>
 
 				<div class="new">
 					<h2>新着商品</h2>
 					<?php foreach ($newitem as $newitem):?>
+					<div class="new_nakami">
 						<?= $this -> Html -> link($this -> Html -> image('/image/' . $newitem -> itemImg), array(
 							'controller' => 'ecsite', 'action' => 'shohindata', $newitem -> itemId), array(
 									'escape' => false)) ?>
 						<p><?=$newitem->itemName?>				&yen;<?=number_format($newitem -> itemPrice)?></p>
+					</div>
 					<?php endforeach;?>
 				</div>
 

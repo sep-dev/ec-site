@@ -22,19 +22,24 @@
 <div class="contaner">
 
 					<!-- //headerここから▽ -->
-						<div class="header">
-							<div class="rogo">
-							<a onclick="location.href='http://localhost/ec-site/Ec-Site/Ecsite'" name="top"><img src="http://localhost/ec-site/Ec-Site/img/title_logo.jpg" alt="" width="485" height="75"/></a>
-							<h1><a onclick="location.href='http://localhost/ec-site/Ec-Site/Ecsite'" name="top">泉水産オフィシャルショップ</a></h1>
-							</div>
-							<div class="header_box">
-								<div class="btn_watch"><i class="fa fa-shopping-cart" aria-hidden="true"></i><?= $this -> Html -> link('カートの中を見る', array(
-								'controller' => 'ecsite', 'action' => 'cart')) ?></div>
-									<p><a onclick="location.href='http://localhost/ec-site/Ec-Site/Ecsite'"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></p>
-								</div>
-						</div>
-					<!-- //headerここまで△ -->
-
+		<div class="header">
+			<div class="rogo">
+				<?= $this -> Html -> link($this -> Html -> image('/img/title_logo.jpg', array(
+						'width' => '485', 'height' => '75')), array(
+							'controller' => 'ecsite', 'action' => 'index'), array(
+								'escape' => false)) ?>
+				<h1><?= $this -> Html -> link('泉水産オフィシャルショップ', array(
+						'controller' => 'ecsite', 'action' => 'index')) ?>
+				</h1>
+			</div>
+			<div class="header_box">
+				<div class="btn_watch"><i class="fa fa-shopping-cart" aria-hidden="true"></i><?= $this -> Html -> link('カートの中を見る', array(
+						'controller' => 'ecsite', 'action' => 'cart')) ?></div>
+					<p><i class="fa fa-home" aria-hidden="true"></i><?= $this -> Html -> link('HOME', array(
+						'controller' => 'ecsite', 'action' => 'index')) ?></p>
+				</div>
+			</div>
+		<!-- //headerここまで△ -->
 
 						<?= $this->fetch('content') ?>
 

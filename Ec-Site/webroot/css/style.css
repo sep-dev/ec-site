@@ -35,12 +35,36 @@ body {
 .content p{
 	text-align : center;
 }
+
+.content{
+	width:80%;
+	margin: 0 10%;
+}
+
+.content caption{
+	padding:30px;
+}
+
+.content p{
+	float:right;
+}
+
+.content tr th{
+	height:40px;
+}
+
+.content td{
+	width:700px;
+	height:50px;
+}
 /*------top_page----------*/
 
 .top_page{
 	margin-top:50px;
 	padding:0;
-	float: right;
+	float: left;
+	margin-left:100px;
+	width:70%;
 }
 
 .top_page h2{
@@ -48,21 +72,38 @@ body {
 	padding-left: 10px;
 }
 
-.season{
-	margin:0;
+.osusume img{
+	width:275px;
+	height:225px;
 }
 
-.osusume{
-	margin:0;
+.osusume_nakami {
+	float:left;
+}
+
+.osusume_nakami img{
+	margin-left:15px;
 }
 
 .new{
-	margin:0;
+	float:left;
+}
+.new img{
+	width:275px;
+	height:225px;
+}
+
+.new_nakami{
+	float:left;
+}
+
+.new_nakami img{
+	margin-left:15px;
 }
 
 .news{
-	width:80%;
-	margin: 50px 9% auto 25%;
+	width:700px;
+	margin: 50px 9% auto 15%;
 	float:left;
 	background-color:#f0d1c1;
 	border: solid 2px #ff8000;
@@ -410,27 +451,6 @@ body {
 
 /*-------------------inputdata----------------*/
 
-.content{
-	width:80%;
-	margin: 0 10%;
-}
-
-.content caption{
-	padding:30px;
-}
-
-.content p{
-	float:right;
-}
-
-.content tr th{
-	height:40px;
-}
-
-.content td{
-	width:700px;
-	height:50px;
-}
 
 span{
 	color:red;
@@ -559,11 +579,17 @@ span{
 	}
 
 	.btn_watch , .header_box p{
-	float:left;
-	margin-top:10px;
-	padding-left:50px;
-	text-size:1em;
+		float:left;
+		margin-top:10px;
+		padding-left:50px;
+		text-size:1em;
 }
+
+	.news{
+		float:left;
+		margin-left:-10%;
+		width:100%;
+	}
 
 	.side_menu{
 			clear:both;

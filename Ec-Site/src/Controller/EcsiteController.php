@@ -93,6 +93,8 @@ class EcsiteController extends AppController {
 	}
 
 	public function inputkakunin() {
+		$this->viewBuilder()->layout('toppage');
+
 		//お客様情報をセッシ
 		$this->set('adddata',$this->Session->read('clientdata'));
 
