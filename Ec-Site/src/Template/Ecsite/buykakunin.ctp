@@ -42,7 +42,6 @@
 				<br>
 				<div align="center">
 					<?= $this->Form->button('カート画面に戻る',array('formaction'=>'cart')) ?>
-					<button type="button" name="go_cart">カート画面に戻る</button>
 					<br><br>
 				</div>
 				<table width="800" height="400" border="1" cellspacing="0" cellpadding="0">
