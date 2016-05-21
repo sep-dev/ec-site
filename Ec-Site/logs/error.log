@@ -63992,3 +63992,204 @@ Stack Trace:
 
 
 >>>>>>> 85aa5866d0c8b8ae98a304ac26be372d09ef1b6d
+2016-05-21 01:55:09 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:55:10 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:55:38 Error: [Cake\View\Exception\MissingLayoutException] Layout file "Layout\toppage.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layout\\toppage.ctp',
+)
+Request URL: /ec-site/Ec-Site/ecsite/inputkakunin
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(615): Cake\View\View->_getLayoutFileName('toppage')
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'toppage')
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(612): Cake\View\View->render(NULL, NULL)
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-05-21 01:56:55 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:56:56 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:57:00 Error: [InvalidArgumentException] Unknown type ""
+Request URL: /ec-site/Ec-Site/ecsite/inputkakunin
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1570): Cake\Database\Type::build(NULL)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1503): Cake\ORM\Table->_newId(Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1450): Cake\ORM\Table->_insert(Object(App\Model\Entity\Tblclient), Array)
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1381): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Tblclient), Object(ArrayObject))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1382): Cake\Database\Connection->transactional(Object(Closure))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(105): Cake\ORM\Table->save(Object(App\Model\Entity\Tblclient))
+#7 [internal function]: App\Controller\EcsiteController->inputkakunin()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2016-05-21 01:58:41 Error: [InvalidArgumentException] Unknown type ""
+Request URL: /ec-site/Ec-Site/ecsite/inputkakunin
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1570): Cake\Database\Type::build(NULL)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1503): Cake\ORM\Table->_newId(Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1450): Cake\ORM\Table->_insert(Object(App\Model\Entity\Tblclient), Array)
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1381): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Tblclient), Object(ArrayObject))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1382): Cake\Database\Connection->transactional(Object(Closure))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(105): Cake\ORM\Table->save(Object(App\Model\Entity\Tblclient))
+#7 [internal function]: App\Controller\EcsiteController->inputkakunin()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2016-05-21 01:59:19 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:59:20 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputdata
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:59:35 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/style.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:59:36 Error: [Cake\Controller\Exception\MissingActionException] Action EcsiteController::css() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EcsiteController',
+  'action' => 'css',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /ec-site/Ec-Site/ecsite/css/css.css
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-05-21 01:59:37 Error: [InvalidArgumentException] Unknown type ""
+Request URL: /ec-site/Ec-Site/ecsite/inputkakunin
+Referer URL: http://localhost/ec-site/Ec-Site/ecsite/inputkakunin
+Stack Trace:
+#0 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1570): Cake\Database\Type::build(NULL)
+#1 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1503): Cake\ORM\Table->_newId(Array)
+#2 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1450): Cake\ORM\Table->_insert(Object(App\Model\Entity\Tblclient), Array)
+#3 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1381): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Tblclient), Object(ArrayObject))
+#4 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#5 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\ORM\Table.php(1382): Cake\Database\Connection->transactional(Object(Closure))
+#6 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php(105): Cake\ORM\Table->save(Object(App\Model\Entity\Tblclient))
+#7 [internal function]: App\Controller\EcsiteController->inputkakunin()
+#8 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#9 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EcsiteController))
+#11 C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
