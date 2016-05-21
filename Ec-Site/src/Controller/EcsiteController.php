@@ -145,13 +145,12 @@ class EcsiteController extends AppController {
 		} else {
 			// Sessionの読み込み
 			$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
-
-			// Sessionへ商品データの書き込み
-			$this -> Session -> write('Item.id', $tblitem -> itemId);
-			$this -> Session -> write('Item.name', $tblitem -> itemName);
-			$this -> Session -> write('Item.img', $tblitem -> itemImg);
-			$this -> Session -> write('Item.price', $tblitem -> itemPrice);
 		}
+		// Sessionへ商品データの書き込み
+		$this -> Session -> write('Item.id', $tblitem -> itemId);
+		$this -> Session -> write('Item.name', $tblitem -> itemName);
+		$this -> Session -> write('Item.img', $tblitem -> itemImg);
+		$this -> Session -> write('Item.price', $tblitem -> itemPrice);
 	}
 
 	/**
