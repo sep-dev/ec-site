@@ -88,7 +88,14 @@ java.lang.Exception
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-20 15:23:32.673
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+<<<<<<< HEAD
 !SESSION 2016-05-21 08:24:38.790 -----------------------------------------------
+=======
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-20 16:24:01.716
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2016-05-20 16:24:08.777 -----------------------------------------------
+>>>>>>> ca606320f1f54b92d0dc7e36ad06db62a67926c0
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_74
 java.vendor=Oracle Corporation
@@ -96,7 +103,16 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
 Framework arguments:  -product
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-21 08:25:08.910
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-21 08:25:08.910
+=======
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-20 16:24:13.824
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-20 16:24:35.106
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-20 16:24:35.106
+>>>>>>> ca606320f1f54b92d0dc7e36ad06db62a67926c0
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'

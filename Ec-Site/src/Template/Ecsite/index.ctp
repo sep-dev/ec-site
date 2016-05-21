@@ -3,27 +3,26 @@
 
 		<div class="contents">
 			<div class="top_page">
-				<div class="season">
-					<h2>季節の商品</h2>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/agi_top.jpg" width="300px" height="200px"></a>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/asari_top.jpg" width="300px" height="200px"></a>
-					<p>今が旬のあじとあさり！ぜひこの機会に食べてみてください！！</p>
-				</div>
-
 				<div class="osusume">
 					<h2>おすすめ商品</h2>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/kani.jpg" width="300px" height="200px"></a>
-					<img src="http://localhost/ec-site/Ec-Site/img/shrimp.jpg" width="300px" height="200px">
-					<p>今一番売れているかにと新鮮なえびがおすすめです！！</p>
+					<?php foreach ($tblitem as $tblitem):?>
+						<?= $this -> Html -> link($this -> Html -> image('/image/' . $tblitem -> itemImg), array(
+							'controller' => 'ecsite', 'action' => 'shohindata', $tblitem -> itemId), array(
+									'escape' => false)) ?>
+						<p><?=$tblitem->itemName?>				&yen;<?=number_format($tblitem -> itemPrice)?></p>
+					<?php endforeach;?>
 				</div>
 
 				<div class="new">
 					<h2>新着商品</h2>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/hokke.jpg" width="300px" height="200px"></a>
-					<a href="shohin_data.html"><img src="http://localhost/ec-site/Ec-Site/img/uni.jpg" width="300px" height="200px"></a>
-					<p>大人気のうにと好評のほっけが入荷しました！！</p>
-
+					<?php foreach ($newitem as $newitem):?>
+						<?= $this -> Html -> link($this -> Html -> image('/image/' . $newitem -> itemImg), array(
+							'controller' => 'ecsite', 'action' => 'shohindata', $newitem -> itemId), array(
+									'escape' => false)) ?>
+						<p><?=$newitem->itemName?>				&yen;<?=number_format($newitem -> itemPrice)?></p>
+					<?php endforeach;?>
 				</div>
+
 
 			</div>
 				<div class="news">
