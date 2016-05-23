@@ -1,0 +1,7 @@
+Ec-Site/config/app.php
+Ec-Site/logs/
+Ec-Site/tmp/debug_kit.sqlite
+Ec-Site/.metadata/
+Ec-Site/.settings/
+.metadata/
+.settings/
