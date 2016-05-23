@@ -295,7 +295,7 @@ class EcsiteController extends AppController {
 				->send();
 		endforeach;
 
-		$this->Session->destroy();
+		$this-> Session -> delete('cartitemlist');
 
 	}
 }
