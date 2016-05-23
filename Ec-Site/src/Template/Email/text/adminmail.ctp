@@ -12,7 +12,7 @@
 
 名前:	<?= $adddata['clientName'] ?>
 
-フリガナ:	<?= $adddata['clientName'] ?>
+フリガナ:	<?= $adddata['clientKana'] ?>
 
 メールアドレス:		<?= $adddata['clientMailAddress'] ?>
 
