@@ -95,6 +95,8 @@ class EcsiteController extends AppController {
 	}
 
 	public function inputkakunin() {
+		$this->viewBuilder()->layout('inputdata');
+
 		//お客様情報をセッシ
 		$this->set('adddata',$this->Session->read('clientdata'));
 
@@ -232,6 +234,8 @@ class EcsiteController extends AppController {
 
 	public function buykakunin(){
 
+		$this->viewBuilder()->layout('inputdata');
+
 		$this->set('itemlist',$this->Session ->read('cartitemlist'));
 
 		//登録したデータのDBのIDを取得
@@ -243,6 +247,7 @@ class EcsiteController extends AppController {
 	}
 
 	public function itembuy(){
+		$this->viewBuilder()->layout('inputdata');
 		//購入したアイテム情報の取得
 		$cartitemlist = $this -> Session -> read('cartitemlist');
 		//登録されたクライントのDBのID取得

@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 Ec-Site/config/app.php
 Ec-Site/logs/
 Ec-Site/tmp/debug_kit.sqlite
+Ec-Site/.metadata/
+Ec-Site/.settings/
+.metadata/
+.settings/
+=======
+Ec-Site/config/app.php
+Ec-Site/logs/
+Ec-Site/tmp/debug_kit.sqlite
+>>>>>>> 1efff418e7d3e925830a040a1f430a17e1b233d5
