@@ -32,9 +32,11 @@ class EcsiteController extends AppController {
 
 	public function index() {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
-		$this -> set('tblitem', $this -> tblItem -> find('all',array('order'=>'rand()',
-													'limit'=>2)));
-		$this -> set('newitem', $this -> tblItem -> find() -> order(array('itemId'=>'DESC')) -> limit(2));
+		$tblitem = $this -> set('tblitem', $this -> tblItem -> find('all',array(
+					'order'=>'rand()',
+					'limit'=>2)));
+		$this -> set('newitem', $this -> tblItem -> find()
+					-> order(array('itemId'=>'DESC')) -> limit(2));
 	}
 	public function inputdata() {
 
@@ -140,9 +142,12 @@ class EcsiteController extends AppController {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
 
-		// Sessionの読み込み
-		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
-
+		if(($this -> Session -> read('Category.id')) == "") {
+			$this -> Session -> write('Category.id', $this -> $tblitem -> itemCategory);
+		} else {
+			// Sessionの読み込み
+			$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
+		}
 		// Sessionへ商品データの書き込み
 		$this -> Session -> write('Item.id', $tblitem -> itemId);
 		$this -> Session -> write('Item.name', $tblitem -> itemName);
@@ -161,44 +166,43 @@ class EcsiteController extends AppController {
 		// Sessionの読み込み
 		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 
-		// 配列cartitemlistが空でなければ、Sessionを読み込む
 		$cartitemlist = array();
+		// 配列cartitemlistが空でなければ、Sessionを読み込む
 		if(count($this -> Session -> read('cartitemlist')) != 0 ) {
 			$cartitemlist = $this -> Session -> read('cartitemlist');
 		}
+		if($this -> request -> is('post')) {
+			$pushFlg = false;
 
-		$pushFlg = false;
-
-		for($i = 0; $i < count($this -> Session -> read('cartitemlist')); $i++) {
-			if($cartitemlist[$i]['id'] == $this -> Session -> read('Item.id')) {
-				if(($cartitemlist[$i]['num'] + $this -> Session -> read('Item.num')) > 5) {
-					$cartitemlist[$i]['num'] = 5;
+			for($i = 0; $i < count($this -> Session -> read('cartitemlist')); $i++) {
+				if($cartitemlist[$i]['id'] == $this -> Session -> read('Item.id')) {
+					if(($cartitemlist[$i]['num'] + $this -> Session -> read('Item.num')) > 5) {
+						$cartitemlist[$i]['num'] = 5;
+					}
+					else {
+						$cartitemlist[$i]['num'] += $this -> Session -> read('Item.num');
+					}
+					$pushFlg = true;
 				}
-				else {
-					$cartitemlist[$i]['num'] += $this -> Session -> read('Item.num');
+			}
+			if(!$pushFlg){
+				if($this -> Session -> read('Item.id') != "") {
+					array_push($cartitemlist, array(
+						'id' => $this -> Session -> read('Item.id'),
+						'name' => $this -> Session -> read('Item.name'),
+						'img' => $this -> Session -> read('Item.img'),
+						'num' => $this -> Session -> read('Item.num'),
+						'price' => $this -> Session -> read('Item.price')
+					));
 				}
-				$pushFlg = true;
 			}
+
+			$this -> Session -> delete('Item.id');
+			$this -> Session -> delete('Item.name');
+			$this -> Session -> delete('Item.img');
+			$this -> Session -> delete('Item.num');
+			$this -> Session -> delete('Item.price');
 		}
-
-		if(!$pushFlg){
-			if($this -> Session -> read('Item.id') != "") {
-			array_push($cartitemlist, array(
-					'id' => $this -> Session -> read('Item.id'),
-					'name' => $this -> Session -> read('Item.name'),
-					'img' => $this -> Session -> read('Item.img'),
-					'num' => $this -> Session -> read('Item.num'),
-					'price' => $this -> Session -> read('Item.price')
-			));
-			}
-		}
-
-		$this -> Session -> delete('Item.id');
-		$this -> Session -> delete('Item.name');
-		$this -> Session -> delete('Item.img');
-		$this -> Session -> delete('Item.num');
-		$this -> Session -> delete('Item.price');
-
 		$_SESSION['cartitemlist'] = $cartitemlist;
 		$this -> set('cartitemlist', $cartitemlist);
 	}

@@ -1,4 +1,3 @@
-
 <div class="shohindata">
 	<h3>商品詳細: <?= h($tblitem -> itemName) ?></h3>
 	<?= $this -> Form -> create(null, array(
