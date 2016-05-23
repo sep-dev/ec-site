@@ -13,7 +13,7 @@
 </head>
 	<body>
 	<?= $this->Form->create(null,array('type'=>'post'))?>
-		<div class="content" align="center">
+		<div id="contents" align="center">
 			<table width="800" height="400" border="1" cellspacing="0"
 				cellpadding="0">
 				<caption>

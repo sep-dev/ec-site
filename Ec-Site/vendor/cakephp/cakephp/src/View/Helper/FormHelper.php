@@ -105,7 +105,7 @@ class FormHelper extends Helper
             'formStart' => '<form{{attrs}}>',
             'formEnd' => '</form>',
             'formGroup' => '{{label}}{{input}}',
-            'hiddenBlock' => '<div style="display:none;">{{content}}</div>',
+            'hiddenBlock' => '<div>{{content}}</div>',
             'input' => '<input type="{{type}}" name="{{name}}"{{attrs}}/>',
             'inputSubmit' => '<input type="{{type}}"{{attrs}}/>',
             'inputContainer' => '<div class="input {{type}}{{required}}">{{content}}</div>',

@@ -184,7 +184,7 @@ return array(
     		'timeout' => 30,
     		'username' => 'arigakoyo@se-project.sakura.ne.jp',
     		'password' => 'f8SKMvH1',
-    		'tls' => true
+    		'tls' => null
   	  )
     ),
 
