@@ -1,12 +1,12 @@
 <div class="shohindata">
 	<h3>商品詳細: <?= h($tblitem -> itemName) ?></h3>
+	<!-- 戻るボタン -->
+	<button><?= $this -> Html -> link('Back', $_SERVER['HTTP_REFERER']); ?></button>
+
 	<?= $this -> Form -> create(null, array(
 			'type' => 'post',
 			'url' => array('controller' => 'ecsite', 'action' => 'cart')
 	)) ?>
-	<!-- 戻るボタン -->
-	<button><?= $this -> Html -> link('Back', $_SERVER['HTTP_REFERER']) ?></button>
-
 	<fieldset>
 		<p><?= $this -> Html -> image('/image/' .$tblitem -> itemImg)?></p>
 		<p><?= h($tblitem -> itemData) ?></p>
