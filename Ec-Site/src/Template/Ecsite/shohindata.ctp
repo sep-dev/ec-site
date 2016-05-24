@@ -5,9 +5,7 @@
 			'url' => array('controller' => 'ecsite', 'action' => 'cart')
 	)) ?>
 	<!-- 戻るボタン -->
-	<button><?= $this -> Html -> link('Back', array(
-			'controller' => 'ecsite', 'action' => 'index')) ?>
-	</button>
+	<button><?= $this -> Html -> link('Back', $_SERVER['HTTP_REFERER']) ?></button>
 
 	<fieldset>
 		<p><?= $this -> Html -> image('/image/' .$tblitem -> itemImg)?></p>
