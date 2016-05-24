@@ -45,46 +45,54 @@ class EcsiteController extends AppController {
 		if($this->request->is('post')&&isset($this->request->data['clientName1'])) {
 				//メールアドレスが確認用と同じかを判断
 				if ($this->request->data['clientMailAddress1']==$this->request->data['clientMailAddress2']) {
-				//入力データを登録できる型に変換
-					$adddata = array(
-						'clientName'		=>	$this->request->data['clientName1'].
-												$this->request->data['clientName2'],
+					if(!empty($this->request->data['clientName1'])&&!empty($this->request->data['clientName2'])){
+						if(!empty($this->request->data['clientKana1'])&&!empty($this->request->data['clientKana2'])){
+							//入力データを登録できる型に変換
+							$adddata = array(
+								'clientName'		=>	$this->request->data['clientName1'].
+														$this->request->data['clientName2'],
 
-						'clientPostCode'	=>	$this->request->data['clientPostCode1'].
-												"-".
-												$this->request->data['clientPostCode2'],
+								'clientPostCode'	=>	$this->request->data['clientPostCode1'].
+														"-".
+														$this->request->data['clientPostCode2'],
 
-						'clientAdd' 		=>	$this->request->data['clientAdd1'].
-												$this->request->data['clientAdd2'],
+								'clientAdd' 		=>	$this->request->data['clientAdd1'].
+														$this->request->data['clientAdd2'],
 
-						'clientTel'			=>	$this->request->data['clientTel1']."-".
-												$this->request->data['clientTel2']."-".
-												$this->request->data['clientTel3'],
+								'clientTel'			=>	$this->request->data['clientTel1']."-".
+														$this->request->data['clientTel2']."-".
+														$this->request->data['clientTel3'],
 
-						'clientMailAddress'	=>	$this->request->data['clientMailAddress1'],
+								'clientMailAddress'	=>	$this->request->data['clientMailAddress1'],
 
-						'clientSex' 		=>	$this->request->data['clientSex'],
+								'clientSex' 		=>	$this->request->data['clientSex'],
 
-						'clientKana' 		=>	$this->request->data['clientKana1'].
-												$this->request->data['clientKana2'],
+								'clientKana' 		=>	$this->request->data['clientKana1'].
+														$this->request->data['clientKana2'],
 
-						'clientBirthday'	=> $this->request->data['clientBirthyear'].
-												"-".
-												$this->request->data['clientBirthMonth'].
-												"-".
-												$this->request->data['clientBirthday']
-		 			);
-					//入力されたデータをバリデーションチェックするための準備
-					$validate = $this->tblClient->newEntity($adddata);
-					//バリデーションを実行して判断
-					if(!$validate->errors()) {
-						//入力されたデータをセッションに追加
-						$this->Session->write('clientdata',$this->request->data);
-						return $this->redirect(array('action' => 'inputkakunin'));
+								'clientBirthday'	=> $this->request->data['clientBirthyear'].
+														"-".
+														$this->request->data['clientBirthMonth'].
+														"-".
+														$this->request->data['clientBirthday']
+				 			);
+							//入力されたデータをバリデーションチェックするための準備
+							$validate = $this->tblClient->newEntity($adddata);
+							//バリデーションを実行して判断
+							if(!$validate->errors()) {
+								//入力されたデータをセッションに追加
+								$this->Session->write('clientdata',$this->request->data);
+								return $this->redirect(array('action' => 'inputkakunin'));
+							} else {
+								//バリデーションして不適切だった場合のエラー表示
+								$errors = $validate->errors();
+								$this->set('error',$errors);
+							}
+						} else {
+							$this->set('errormail','カナが入力されておりません');
+						}
 					} else {
-						//バリデーションして不適切だった場合のエラー表示
-						$errors = $validate->errors();
-						$this->set('error',$errors);
+						$this->set('errormail','名前が入力されておりません');
 					}
 
 				} else {

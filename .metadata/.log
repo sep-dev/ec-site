@@ -1027,7 +1027,11 @@ org.eclipse.dltk.core.ModelException: リンクされたリソース '/.org.ecli
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-23 11:53:51.854
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+<<<<<<< HEAD
 !SESSION 2016-05-23 17:40:19.950 -----------------------------------------------
+=======
+!SESSION 2016-05-24 09:21:05.351 -----------------------------------------------
+>>>>>>> d714e3fe034b14a28bd992f9ad989aa9d8953af8
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_74
 java.vendor=Oracle Corporation
@@ -1035,6 +1039,7 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
 Framework arguments:  -product
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 2 10035 2016-05-23 17:40:21.410
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
@@ -1044,6 +1049,17 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
 
 !ENTRY org.eclipse.dltk.core 4 4 2016-05-23 17:40:25.960
+=======
+!ENTRY org.eclipse.core.resources 2 10035 2016-05-24 09:21:13.171
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:21:38.683
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:21:38.683
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.dltk.core 4 4 2016-05-24 09:21:52.044
+>>>>>>> d714e3fe034b14a28bd992f9ad989aa9d8953af8
 !MESSAGE Problem creating hidden project for external folders
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: '.org.eclipse.dltk.core.external.folders' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
@@ -1068,6 +1084,7 @@ org.eclipse.core.internal.resources.ResourceException: '.org.eclipse.dltk.core.e
 	at org.eclipse.dltk.internal.core.ScriptProject.resolveBuildpath(ScriptProject.java:1022)
 	at org.eclipse.dltk.internal.core.ScriptProject.resolveBuildpath(ScriptProject.java:820)
 	at org.eclipse.dltk.internal.core.ScriptProject.getResolvedBuildpath(ScriptProject.java:296)
+<<<<<<< HEAD
 	at org.eclipse.dltk.internal.core.ScriptProject.buildStructure(ScriptProject.java:511)
 	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:195)
 	at org.eclipse.dltk.internal.core.Openable.openParent(Openable.java:401)
@@ -1104,6 +1121,26 @@ org.eclipse.core.internal.resources.ResourceException: '.org.eclipse.dltk.core.e
 !MESSAGE リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link1' を作成できません。 親リソースにアクセスできません。
 !STACK 1
 org.eclipse.dltk.core.ModelException: リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link1' を作成できません。 親リソースにアクセスできません。
+=======
+	at org.eclipse.dltk.internal.core.DeltaProcessor.validateBuildpaths(DeltaProcessor.java:2578)
+	at org.eclipse.dltk.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2014)
+	at org.eclipse.dltk.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:511)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:359)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-05-24 09:21:52.304
+!MESSAGE '.org.eclipse.dltk.core.external.folders' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+
+!ENTRY org.eclipse.php.core 4 4 2016-05-24 09:21:52.534
+!MESSAGE リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link2' を作成できません。 親リソースにアクセスできません。
+!STACK 1
+org.eclipse.dltk.core.ModelException: リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link2' を作成できません。 親リソースにアクセスできません。
+>>>>>>> d714e3fe034b14a28bd992f9ad989aa9d8953af8
 	at org.eclipse.dltk.core.ModelException.propagate(ModelException.java:119)
 	at org.eclipse.dltk.internal.core.ExternalFolderChange.updateExternalFoldersIfNecessary(ExternalFolderChange.java:53)
 	at org.eclipse.dltk.internal.core.ChangeBuildpathOperation.buildpathChanged(ChangeBuildpathOperation.java:71)
@@ -1119,6 +1156,7 @@ org.eclipse.dltk.core.ModelException: リンクされたリソース '/.org.ecli
 	at org.eclipse.dltk.internal.core.ScriptProject.resolveBuildpath(ScriptProject.java:1022)
 	at org.eclipse.dltk.internal.core.ScriptProject.resolveBuildpath(ScriptProject.java:820)
 	at org.eclipse.dltk.internal.core.ScriptProject.getResolvedBuildpath(ScriptProject.java:296)
+<<<<<<< HEAD
 	at org.eclipse.dltk.internal.core.ScriptProject.buildStructure(ScriptProject.java:511)
 	at org.eclipse.dltk.internal.core.Openable.generateInfos(Openable.java:195)
 	at org.eclipse.dltk.internal.core.Openable.openParent(Openable.java:401)
@@ -1151,6 +1189,22 @@ org.eclipse.dltk.core.ModelException: リンクされたリソース '/.org.ecli
 !SUBENTRY 1 org.eclipse.core.resources 4 77 2016-05-23 17:40:25.975
 !MESSAGE リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link1' を作成できません。 親リソースにアクセスできません。
 !SESSION 2016-05-24 09:05:50.254 -----------------------------------------------
+=======
+	at org.eclipse.dltk.internal.core.DeltaProcessor.validateBuildpaths(DeltaProcessor.java:2578)
+	at org.eclipse.dltk.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2014)
+	at org.eclipse.dltk.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:511)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:359)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2016-05-24 09:21:52.534
+!MESSAGE リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link2' を作成できません。 親リソースにアクセスできません。
+!SESSION 2016-05-24 09:28:12.683 -----------------------------------------------
+>>>>>>> d714e3fe034b14a28bd992f9ad989aa9d8953af8
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_74
 java.vendor=Oracle Corporation
@@ -1158,7 +1212,13 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
 Framework arguments:  -product
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:05:55.327
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:05:55.327
+=======
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:28:16.245
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:28:16.245
+>>>>>>> d714e3fe034b14a28bd992f9ad989aa9d8953af8
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
