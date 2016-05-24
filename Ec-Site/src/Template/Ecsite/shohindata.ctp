@@ -6,7 +6,7 @@
 	)) ?>
 	<!-- 戻るボタン -->
 	<button><?= $this -> Html -> link('Back', array(
-			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?>
+			'controller' => 'ecsite', 'action' => 'index')) ?>
 	</button>
 
 	<fieldset>

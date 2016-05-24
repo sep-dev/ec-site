@@ -39,5 +39,5 @@
 	<?php endif; ?>
 	<!-- 続ける場合は、配列にセッション情報を格納 -->
 	<button><?= $this -> Html -> link('買い物を続ける', array(
-			'controller' => 'ecsite', 'action' => 'categorylist', $sesCategoryid)) ?></button>
+			'controller' => 'ecsite', 'action' => 'index')) ?></button>
 </div>

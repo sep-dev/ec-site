@@ -118,8 +118,7 @@ class EcsiteController extends AppController {
 	 */
 	public function categorylist($id = null) {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
-		// カテゴリ番号をSessionへ書き込む
-		$this -> Session -> write('Category.id', $id);
+
 		$tblitem = $this -> set('tblitem', $this -> paginate($this -> tblItem -> find()
 					-> where(array('itemCategory' => $id))));
 
@@ -142,12 +141,6 @@ class EcsiteController extends AppController {
 		$tblitem = $this -> tblItem -> get($id);
 		$this -> set(compact('tblitem'));
 
-		if(($this -> Session -> read('Category.id')) == "") {
-			$this -> Session -> write('Category.id', $this -> $tblitem -> itemCategory);
-		} else {
-			// Sessionの読み込み
-			$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
-		}
 		// Sessionへ商品データの書き込み
 		$this -> Session -> write('Item.id', $tblitem -> itemId);
 		$this -> Session -> write('Item.name', $tblitem -> itemName);
@@ -162,9 +155,6 @@ class EcsiteController extends AppController {
 		$this -> set('tblcategory', $this -> tblCategory -> find('all'));
 		// SelectBoxの値をSessionへ書き込む
 		$this -> Session -> write('Item.num', $this -> request -> data('select'));
-
-		// Sessionの読み込み
-		$this -> set('sesCategoryid', $this -> Session -> read('Category.id'));
 
 		$cartitemlist = array();
 		// 配列cartitemlistが空でなければ、Sessionを読み込む
