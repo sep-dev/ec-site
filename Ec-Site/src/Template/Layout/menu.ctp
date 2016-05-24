@@ -64,7 +64,8 @@
 			</div>
 			<!-- //footerここから▽ -->
 				<footer id="footer">
-					<p class="home_link"><a onclick="location.href='http://localhost/ec-site/Ec-Site/Ecsite'">HOME</a></p>
+					<p><?= $this -> Html -> link('HOME', array(
+							'controller' => 'ecsite', 'action' => 'index')) ?></p>
 					<br>
 					<p>&copy; IZUMI SUISAN CO.,LTD. ALL Right Reserved. &copy; IZUMI-SUISAN</p>
 				</footer>
