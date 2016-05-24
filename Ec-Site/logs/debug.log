@@ -15445,7 +15445,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 04:24:51 Notice: Notice (8): Trying to get property of non-object in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\test\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+=======
 2016-05-23 04:12:16 Notice: Notice (8): Trying to get property of non-object in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 App\Controller\EcsiteController::shohindata() - APP/Controller\EcsiteController.php, line 146
@@ -15456,7 +15460,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 04:24:51 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\test\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+=======
 2016-05-23 04:12:16 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 include - APP/Template\Ecsite\shohindata.ctp, line 9
@@ -15470,7 +15478,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 04:24:57 Notice: Notice (8): Trying to get property of non-object in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\test\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+=======
 2016-05-23 04:12:23 Notice: Notice (8): Trying to get property of non-object in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 App\Controller\EcsiteController::shohindata() - APP/Controller\EcsiteController.php, line 146
@@ -15481,7 +15493,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 04:24:57 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\test\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+=======
 2016-05-23 04:12:24 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 include - APP/Template\Ecsite\shohindata.ctp, line 9
@@ -15495,7 +15511,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 04:26:03 Notice: Notice (8): Trying to get property of non-object in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+=======
 2016-05-23 04:14:21 Notice: Notice (8): Trying to get property of non-object in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 App\Controller\EcsiteController::shohindata() - APP/Controller\EcsiteController.php, line 146
@@ -15506,7 +15526,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 04:26:03 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+=======
 2016-05-23 04:14:21 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 include - APP/Template\Ecsite\shohindata.ctp, line 9
@@ -15520,7 +15544,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 06:12:07 Notice: Notice (8): Trying to get property of non-object in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+=======
 2016-05-23 04:14:43 Notice: Notice (8): Trying to get property of non-object in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 App\Controller\EcsiteController::shohindata() - APP/Controller\EcsiteController.php, line 146
@@ -15531,7 +15559,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 06:12:07 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+=======
 2016-05-23 04:14:43 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 include - APP/Template\Ecsite\shohindata.ctp, line 9
@@ -15545,7 +15577,11 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 06:12:16 Notice: Notice (8): Trying to get property of non-object in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+=======
 2016-05-23 04:15:51 Notice: Notice (8): Trying to get property of non-object in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Controller\EcsiteController.php, line 146]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 App\Controller\EcsiteController::shohindata() - APP/Controller\EcsiteController.php, line 146
@@ -15556,6 +15592,9 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+<<<<<<< HEAD
+2016-05-23 06:12:16 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\ikedarika\Desktop\pleiades\xampp\htdocs\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+=======
 2016-05-23 04:15:51 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
@@ -15657,6 +15696,7 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 2016-05-23 05:00:59 Notice: Notice (8): Undefined variable: sesCategoryid in [C:\Users\arigakoyo\Desktop\work\ec-site\Ec-Site\src\Template\Ecsite\shohindata.ctp, line 9]
+>>>>>>> 2e889ce1070e9de58f9669db3a7e989df768275f
 Trace:
 Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 140
 include - APP/Template\Ecsite\shohindata.ctp, line 9
