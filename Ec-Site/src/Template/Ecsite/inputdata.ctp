@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>ユーザー情報入力画面</title>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta http-equiv="content-script-type"
-	content="text/javascript; charset=UTF-8" />
-<meta http-equiv="content-style-type" content="text/css; charset=UTF-8" />
-<meta http-equiv="content-language" content="ja" />
-<meta name="Keywords" content="泉水産,オンラインショップ,ショップ,食品,海産物,魚,甲殻類,通販" />
-<meta name="Description" content="泉水産 オンラインショップ - 泉水産ローカル通販サイト" />
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/css.css">
-<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-</head>
-<body>
 <?= $this->Form->create(null,array('type'=>'post'))?>
+<?= $this->Html->script("https://ajaxzip3.github.io/ajaxzip3.js") ?>
 	<div>
 		<br> <br>
 		<div align="center">
@@ -178,5 +163,3 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>

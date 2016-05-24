@@ -1114,3 +1114,15 @@ org.eclipse.dltk.core.ModelException: リンクされたリソース '/.org.ecli
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.eclipse.core.resources 4 77 2016-05-24 09:21:52.534
 !MESSAGE リンクされたリソース '/.org.eclipse.dltk.core.external.folders/.link2' を作成できません。 親リソースにアクセスできません。
+!SESSION 2016-05-24 09:28:12.683 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_74
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:28:16.245
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-05-24 09:28:16.245
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
